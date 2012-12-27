@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Remote Assist Demo (Admin)</title>
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <style type="text/css">
+        body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+<button onclick="JoinRoom();">Connect</button> <input id="SessionKey" placeholder="Enter Session ID" style= "margin-left: 10px;">
+<table style="width: 100%">
+    <tr>
+        <td style="width: 100%"><div id="ClientScreen"></div></td>
+    </tr>
+</table>
+</body>
+<script type="text/javascript" src="lib/js/jquery.js"></script>
+<script type="text/javascript" src='http://localhost:3001/socket.io/socket.io.js'></script>
+<script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="lib/js/admin.js"></script>
+</html>

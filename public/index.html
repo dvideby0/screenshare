@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Remote Assist Demo (Client)</title>
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <style type="text/css">
+        body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+<center>
+    <h1>Remote Assist Demo (Client)</h1>
+    <img style="width: 150px; height: 45px" src="http://nodeblog.files.wordpress.com/2011/07/nodejs.png">
+</center>
+<a href="#myModal" class="btn" data-toggle="modal">Request Assistance</a>
+<p>Some Really confusing form</p>
+Acct Type<br />
+<select id="MySelect">
+    <option value="checking">Checking</option>
+    <option value="savings">Savings</option>
+    <option value="pre-paid">Pre-Paid</option>
+    <option value="loan">Loan</option>
+</select><br />
+Acct#<br />
+<input><br /><br />
+Blood Type<br />
+<input><br /><br />
+Cubed Root of 360<br />
+<input><br /><br />
+Neighbor's Middle Name<br />
+<input>
+<br />
+<button onclick="$(this).replaceWith('<input>')">Add</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Create Password</h3>
+    </div>
+    <div class="modal-body">
+        <p>Enter a Key to provide to the representative</p>
+        <input id="SessionKey">
+    </div>
+    <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+        <button class="btn btn-primary" onclick="CreateSession();">Save</button>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="lib/js/jquery.js"></script>
+<script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
+<script type="text/javascript" src='http://localhost:3001/socket.io/socket.io.js'></script>
+<script type="text/javascript" src="lib/js/client.js"></script>
+</html>
