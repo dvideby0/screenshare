@@ -40,12 +40,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="client.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="client.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/lib/js/client.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="29" selection-start="135" selection-end="135" vertical-scroll-proportion="-1.7307693">
+            <state line="11" column="34" selection-start="363" selection-end="363" vertical-scroll-proportion="0.23878437">
               <folding>
-                <marker date="1356600149000" expanded="true" signature="1840:1966" placeholder="..." />
+                <marker date="1356602593000" expanded="true" signature="1931:2057" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -62,10 +62,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="admin.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/admin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="108" selection-start="486" selection-end="486" vertical-scroll-proportion="0.29745042">
+            <state line="4" column="45" selection-start="170" selection-end="170" vertical-scroll-proportion="-2.5">
               <folding>
                 <element signature="n#style#0;n#input#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -88,8 +88,8 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/public/lib/js/admin.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/public/lib/js/client.js" />
         <option value="$PROJECT_DIR$/public/admin.html" />
+        <option value="$PROJECT_DIR$/public/lib/js/client.js" />
       </list>
     </option>
   </component>
@@ -334,15 +334,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/lib/js/client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="29" selection-start="135" selection-end="135" vertical-scroll-proportion="-1.7307693">
-          <folding>
-            <marker date="1356600149000" expanded="true" signature="1840:1966" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/lib/js/admin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="0" selection-start="1381" selection-end="1381" vertical-scroll-proportion="0.0">
@@ -354,11 +345,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/admin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="108" selection-start="486" selection-end="486" vertical-scroll-proportion="0.29745042">
+        <state line="4" column="45" selection-start="170" selection-end="170" vertical-scroll-proportion="-2.5">
           <folding>
             <element signature="n#style#0;n#input#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/js/client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="34" selection-start="363" selection-end="363" vertical-scroll-proportion="0.23878437">
+          <folding>
+            <marker date="1356602593000" expanded="true" signature="1931:2057" placeholder="..." />
           </folding>
         </state>
       </provider>

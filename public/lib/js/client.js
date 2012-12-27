@@ -1,8 +1,4 @@
 $(document).ready(function(){
-    $('*').each(function(){
-        $(this).attr('index', $(this).index());
-        $(this).attr('css', document.defaultView.getComputedStyle(this,null).cssText);
-    });
     $('img').attr('src', function(){
         if(!/(\.com)|(\.org)|(\.edu)|(\.co)|(\.net)/ig.test($(this).attr('src'))){
             $(this).attr('src', '//' + document.domain + '/' + $(this).attr('src'));
@@ -12,6 +8,11 @@ $(document).ready(function(){
 
 var socket;
 function CreateSession(){
+    $('#myModal').modal('hide');
+    $('.modal-backdrop').remove();
+    $('*').each(function(){
+        $(this).attr('style', document.defaultView.getComputedStyle(this,null).cssText);
+    });
     (function( $ ){
 
         $.fn.observe = function( callback, options ) {
@@ -42,7 +43,8 @@ function CreateSession(){
 
 
     var fn = function (m) {
-            console.log(m, this);
+            console.log(m);
+            console.log(document.defaultView.getComputedStyle(this,null));
         },
         options = {characterData: false};
 
@@ -62,10 +64,12 @@ function CreateSession(){
         $('input').bind('keyup', function() {
             //SendScreen($(this).index());
             $(this).attr('value', this.value);
+            SendScreen();
 
         });
         $('select').change(function(){
             $(this).attr('selected', true);
+            SendScreen();
         });
     });
 
