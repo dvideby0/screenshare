@@ -4,15 +4,15 @@ $(document).ready(function(){
             $(this).attr('src', '//' + document.domain + '/' + $(this).attr('src'));
         }
     });
+    $('div, input, button, select, textarea, p, span, a').not('#myModal').each(function(){
+        $(this).attr('style', getAllStyles(this).join().replace(/,/g, ';'));
+    });
 });
 
 var socket;
 function CreateSession(){
     $('#myModal').modal('hide');
     $('.modal-backdrop').remove();
-    $('*').each(function(){
-        $(this).attr('style', document.defaultView.getComputedStyle(this,null).cssText);
-    });
     (function( $ ){
 
         $.fn.observe = function( callback, options ) {
@@ -44,7 +44,6 @@ function CreateSession(){
 
     var fn = function (m) {
             console.log(m);
-            console.log(document.defaultView.getComputedStyle(this,null));
         },
         options = {characterData: false};
 
@@ -62,7 +61,6 @@ function CreateSession(){
             $('#AdminPointer').css({'left': msg.PositionLeft - 15, 'top': msg.PositionTop});
         });
         $('input').bind('keyup', function() {
-            //SendScreen($(this).index());
             $(this).attr('value', this.value);
             SendScreen();
 
@@ -103,3 +101,28 @@ function SendScreen(){
     socket.emit('SendScreen', {Room: document.getElementById('SessionKey').value, Data: document.getElementsByTagName('body')[0].innerHTML});
 }
 
+function getStyleById(id) {
+    return getAllStyles(document.getElementById(id));
+}
+function getAllStyles(elem) {
+    if (!elem) return []; // Element does not exist, empty list.
+    var win = document.defaultView || window, style, styleNode = [];
+    if (win.getComputedStyle) { /* Modern browsers */
+        style = win.getComputedStyle(elem, '');
+        for (var i=0; i<style.length; i++) {
+            styleNode.push( style[i] + ':' + style.getPropertyValue(style[i]) );
+            //               ^name ^           ^ value ^
+        }
+    } else if (elem.currentStyle) { /* IE */
+        style = elem.currentStyle;
+        for (var name in currentStyle) {
+            styleNode.push( name + ':' + currentStyle[name] );
+        }
+    } else { /* Ancient browser..*/
+        style = elem.style;
+        for (var i=0; i<style.length; i++) {
+            styleNode.push( style[i] + ':' + style[style[i]] );
+        }
+    }
+    return styleNode;
+}
