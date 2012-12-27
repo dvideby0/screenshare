@@ -105,20 +105,19 @@ function getStyleById(id) {
     return getAllStyles(document.getElementById(id));
 }
 function getAllStyles(elem) {
-    if (!elem) return []; // Element does not exist, empty list.
+    if (!elem) return [];
     var win = document.defaultView || window, style, styleNode = [];
-    if (win.getComputedStyle) { /* Modern browsers */
+    if (win.getComputedStyle) {
         style = win.getComputedStyle(elem, '');
         for (var i=0; i<style.length; i++) {
             styleNode.push( style[i] + ':' + style.getPropertyValue(style[i]) );
-            //               ^name ^           ^ value ^
         }
-    } else if (elem.currentStyle) { /* IE */
+    } else if (elem.currentStyle) {
         style = elem.currentStyle;
         for (var name in currentStyle) {
             styleNode.push( name + ':' + currentStyle[name] );
         }
-    } else { /* Ancient browser..*/
+    } else {
         style = elem.style;
         for (var i=0; i<style.length; i++) {
             styleNode.push( style[i] + ':' + style[style[i]] );

@@ -40,21 +40,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="client.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="client.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/lib/js/client.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="0" selection-start="2479" selection-end="2479" vertical-scroll-proportion="-41.53846">
+            <state line="107" column="25" selection-start="3642" selection-end="3642" vertical-scroll-proportion="0.43560058">
               <folding>
-                <marker date="1356636422000" expanded="true" signature="1907:2033" placeholder="..." />
+                <marker date="1356636870000" expanded="true" signature="1907:2033" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="96" selection-start="421" selection-end="421" vertical-scroll-proportion="0.14383562">
+            <state line="7" column="96" selection-start="421" selection-end="421" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -98,8 +98,8 @@
         <option value="$PROJECT_DIR$/public/lib/js/admin.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/admin.html" />
-        <option value="$PROJECT_DIR$/public/lib/js/client.js" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/public/lib/js/client.js" />
       </list>
     </option>
   </component>
@@ -364,19 +364,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/lib/js/client.js">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="0" selection-start="2479" selection-end="2479" vertical-scroll-proportion="-41.53846">
-          <folding>
-            <marker date="1356636422000" expanded="true" signature="1907:2033" placeholder="..." />
-          </folding>
+        <state line="7" column="96" selection-start="421" selection-end="421" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/public/lib/js/client.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="96" selection-start="421" selection-end="421" vertical-scroll-proportion="0.14383562">
-          <folding />
+        <state line="107" column="25" selection-start="3642" selection-end="3642" vertical-scroll-proportion="0.43560058">
+          <folding>
+            <marker date="1356636870000" expanded="true" signature="1907:2033" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
