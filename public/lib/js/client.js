@@ -4,7 +4,8 @@ $(document).ready(function(){
             $(this).attr('src', '//' + document.domain + '/' + $(this).attr('src'));
         }
     });
-    $('div, input, button, select, textarea, p, span, a').not('#myModal').each(function(){
+    $('body').children('*').not('#myModal').each(function(){
+        $(this).attr('index', $(this).index());
         $(this).attr('style', getAllStyles(this).join().replace(/,/g, ';'));
     });
 });
@@ -47,7 +48,6 @@ function CreateSession(){
         },
         options = {characterData: false};
 
-// usage:
     $('*').observe(fn, options);
     socket = io.connect('http://localhost:3001');
     socket.on('connect', function(){
@@ -60,14 +60,14 @@ function CreateSession(){
         socket.on('AdminMousePosition', function(msg) {
             $('#AdminPointer').css({'left': msg.PositionLeft - 15, 'top': msg.PositionTop});
         });
-        $('input').bind('keyup', function() {
+        $(':input').bind('keyup', function() {
             $(this).attr('value', this.value);
-            SendScreen();
+            //SendScreen();
 
         });
         $('select').change(function(){
             $(this).attr('selected', true);
-            SendScreen();
+            //SendScreen();
         });
     });
 
