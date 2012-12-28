@@ -1,0 +1,57 @@
+<html>
+<head>
+    <style>
+        body{
+            background-color: #cccccc;
+        }
+        button{
+            color: #0088cc;
+            background-color: #000000;
+            border: none;
+            padding: 7px 10px 7px 10px;
+            font-size: 15px;
+        }
+        input{
+            background-color: #000000;
+            color: #0088cc;
+            border: none;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+<button onclick="addElement();">Add</button>
+<button onclick="hideShow();">Hide/Show</button>
+<button onclick="removeElement();">Remove</button>
+<button onclick="showIndex();">Show Index</button>
+<div id="Stuff"></div>
+</body>
+<script type="text/javascript" src="lib/js/mutation_summary.js"></script>
+<script type="text/javascript" src="lib/js/tree_mirror.js"></script>
+<script type="text/javascript" src="lib/js/jquery.js"></script>
+<script type="text/javascript">
+    function addElement(){
+        $('#Stuff').append('<input><br />');
+    }
+    function hideShow(){
+        $('#Stuff').children('input').toggle();
+    }
+    function removeElement(){
+        $('#Stuff').children('input').remove();
+    }
+    function showIndex(){
+        $('#Stuff').children('input').each(function(){
+            $(this).val($(this).index());
+        });
+    }
+    mirrorClient = new TreeMirrorClient(document, {
+        initialize: function(rootId, children) {
+            console.log(rootId, children);
+        },
+
+        applyChanged: function(removed, addedOrMoved, attributes, text) {
+            console.log(removed, addedOrMoved, attributes, text);
+        }
+    });
+</script>
+</html>
