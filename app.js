@@ -25,5 +25,8 @@ io.sockets.on('connection', function(socket) {
     socket.on('AdminMousePosition', function(msg){
         socket.broadcast.to(msg.room).emit('AdminMousePosition', {PositionLeft:msg.PositionLeft, PositionTop:msg.PositionTop});
     });
+    socket.on('changeHappened', function(msg){
+        io.sockets.emit('changes', msg)
+    });
 });
 app.listen(3000);

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript" src="lib/js/mutation_summary.js"></script>
+<script type="text/javascript" src="lib/js/tree_mirror.js"></script>
+<script type="text/javascript" src="lib/js/jquery.js"></script>
+<script type="text/javascript" src='http://localhost:3001/socket.io/socket.io.js'></script>
+<script type="text/javascript">
+    socket = io.connect('http://localhost:3001');
+    mirrorClient = new TreeMirrorClient(document, {
+        initialize: function(rootId, children) {
+            console.log(rootId, children);
+        }
+    });
+    window.addEventListener('DOMContentLoaded', function() {
+
+        while (document.firstChild) {
+            document.removeChild(document.firstChild);
+        }
+
+        var base;
+
+        var mirror = new TreeMirror(document, {
+            createElement: function(tagName) {
+                if (tagName == 'SCRIPT') {
+                    var node = document.createElement('NO-SCRIPT');
+                    node.style.display = 'none';
+                    return node;
+                }
+
+                if (tagName == 'HEAD') {
+                    var node = document.createElement('HEAD');
+                    node.appendChild(document.createElement('BASE'));
+                    node.firstChild.href = base;
+                    return node;
+                }
+            }
+        });
+
+        socket.on('changes', function(msg){
+            if (msg.base)
+                base = msg.base;
+            else
+                mirror[msg.f].apply(mirror, msg.args);
+        });
+    });
+
+</script>
+</html>
