@@ -16,7 +16,7 @@
     <h1>Remote Assist Demo (Client)</h1>
     <img style="width: 150px; height: 45px" src="http://nodeblog.files.wordpress.com/2011/07/nodejs.png">
 </center>
-<a href="#myModal" class="btn" data-toggle="modal">Request Assistance</a>
+<a class="btn" onclick="$('#myModal').modal('show');">Request Assistance</a>
 <p>Some Really confusing form</p>
 Acct Type<br />
 <select id="MySelect">
@@ -52,6 +52,8 @@ Neighbor's Middle Name<br />
     </div>
 </div>
 </body>
+<script type="text/javascript" src="lib/js/mutation_summary.js"></script>
+<script type="text/javascript" src="lib/js/tree_mirror.js"></script>
 <script type="text/javascript" src="lib/js/jquery.js"></script>
 <script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
 <script type="text/javascript" src='http://localhost:3001/socket.io/socket.io.js'></script>
