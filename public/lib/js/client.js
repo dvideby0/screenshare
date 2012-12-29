@@ -45,7 +45,18 @@ function CreateSession(){
             $(this).attr('value', this.value);
         });
         $('select').change(function(){
-            $(this).attr('selected', true);
+            var Selected = $(this).children('option:selected');
+            $(this).children('option').removeAttr('selected', false);
+            Selected.attr('selected', true);
+            $(this).replaceWith($(this)[0].outerHTML);
+            $('select').unbind('change');
+            $('select').change(function(){
+                var Selected = $(this).children('option:selected');
+                $(this).children('option').removeAttr('selected', false);
+                Selected.attr('selected', true);
+                $(this).replaceWith($(this)[0].outerHTML);
+                $('select').unbind('change');
+            });
         });
     });
 
