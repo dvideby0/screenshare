@@ -1,5 +1,15 @@
 var socket = undefined;
 var oDOM;
+$(document).on('ready', function(){
+    $('#HomePage').show();
+    $('.nav li').click(function(){
+        $(this).parent('ul').children('li').removeClass('active');
+        $(this).addClass('active');
+        var Name = $(this).children('a').text();
+        $('.page').hide();
+        $('#' + Name + 'Page').show()
+    });
+});
 function socketSend(msg) {
     socket.emit('changeHappened', msg);
 }
@@ -28,15 +38,16 @@ function startMirroring() {
     });
 }
 function CreateSession(){
-    $('#myModal').modal('hide');
+    $('#HelpModal').modal('hide');
     socket = io.connect('http://localhost:3001');
     socket.on('connect', function(){
         socket.emit('CreateSession', document.getElementById('SessionKey').value);
         socket.on('SessionStarted', function() {
+            socketSend({height: $(window).height(), width: $(window).width()})
             socketSend({ base: location.href.match(/^(.*\/)[^\/]*$/)[1] });
             socketSend(oDOM);
             SendMouse();
-            $('body').append('<div id="AdminPointer" style="position: absolute; z-index: 1; height: 30px; width: 30px; border-radius: 5em; background-color: orange; opacity:0.5; top: 1px"></div> ');
+            $('body').append('<div id="AdminPointer" style="position: absolute; z-index: 9999; height: 30px; width: 30px; border-radius: 5em; background-color: orange; opacity:0.5; top: 1px"></div> ');
         });
         socket.on('AdminMousePosition', function(msg) {
             $('#AdminPointer').css({'left': msg.PositionLeft - 15, 'top': msg.PositionTop});

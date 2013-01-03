@@ -4,50 +4,82 @@
 <head>
     <title>Remote Assist Demo (Client)</title>
     <link rel="stylesheet" href="lib/css/bootstrap.min.css">
-    <style type="text/css">
-        body {
-            padding-top: 60px;
-            padding-bottom: 40px;
-        }
-    </style>
+    <link rel="stylesheet" href="lib/css/client.css">
 </head>
 <body>
-<center>
-    <h1>Remote Assist Demo (Client)</h1>
-</center>
-<a class="btn" onclick="$('#myModal').modal('show');">Request Assistance</a>
-<p>Some Really confusing form</p>
-Acct Type<br />
-<select id="MySelect">
-    <option value="checking">Checking</option>
-    <option value="savings">Savings</option>
-    <option value="pre-paid">Pre-Paid</option>
-    <option value="loan">Loan</option>
-</select><br />
-Acct#<br />
-<input><br /><br />
-Blood Type<br />
-<input><br /><br />
-Cubed Root of 360<br />
-<input><br /><br />
-Neighbor's Middle Name<br />
-<input>
-<br />
-<button onclick="$(this).replaceWith('<input>')">Add</button>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="#">Remote Assist (demo)</a>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li class="active"><a href="javascript:">Home</a></li>
+                    <li><a href="javascript:">About</a></li>
+                    <li><a href="javascript:">Contact</a></li>
+                    <li><a href="javascript:">Help</a></li>
+                </ul>
+                <a class="btn" onclick="$('#HelpModal').modal('show');">Request Assistance</a>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="page" id="HomePage">
+        <h3>Some Really confusing form</h3>
+        Acct Type<br />
+        <select id="MySelect">
+            <option value="checking">Checking</option>
+            <option value="savings">Savings</option>
+            <option value="pre-paid">Pre-Paid</option>
+            <option value="loan">Loan</option>
+        </select><br />
+        Acct#<br />
+        <input><br /><br />
+        Blood Type<br />
+        <input><br /><br />
+        Cubed Root of 360<br />
+        <input><br /><br />
+        Neighbor's Middle Name<br />
+        <input>
+        <br /><br />
+        <a class="btn btn-primary" href="javascript:$('#SubmitModal').modal('show')">Submit</a>
+    </div>
+    <div class="page" id="HelpPage">
+        <h3>Need Help?</h3>
+        <p>We are here to help you 24/7. Please pick one of the following methods below which suite your needs.</p>
+    </div>
 
-<!-- Modal -->
-<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h3 id="myModalLabel">Create Password</h3>
+    <!-- Modal -->
+    <div id="HelpModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="HelpModalLabel" aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="HelpModalLabel">Create Password</h3>
+        </div>
+        <div class="modal-body">
+            <p>Enter a Key to provide to the representative</p>
+            <input id="SessionKey">
+        </div>
+        <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+            <button class="btn btn-primary" onclick="CreateSession();">Save</button>
+        </div>
     </div>
-    <div class="modal-body">
-        <p>Enter a Key to provide to the representative</p>
-        <input id="SessionKey">
-    </div>
-    <div class="modal-footer">
-        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-        <button class="btn btn-primary" onclick="CreateSession();">Save</button>
+    <div id="SubmitModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="SubmitModalLabel" aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="SubmitModelLabel">Success</h3>
+        </div>
+        <div class="modal-body">
+            <h4>You have successfully submitted your request form. A representative will contact you within 48 hours to discuss your eligibility.</h4>
+        </div>
+        <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+        </div>
     </div>
 </div>
 </body>
