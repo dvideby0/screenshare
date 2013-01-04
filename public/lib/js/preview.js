@@ -59,5 +59,8 @@ function SessionStarted(){
         if(msg.args){
             mirror[msg.f].apply(mirror, msg.args);
         }
+        if(msg.scroll){
+            $(window).scrollTop(msg.scroll);
+        }
     });
 }

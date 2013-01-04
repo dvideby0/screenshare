@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55e27d9a-22ad-408f-add0-990bf9fc7042" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/css/admin.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/css/client.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/js/preview.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/preview.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin.html" afterPath="$PROJECT_DIR$/public/admin.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/js/admin.js" afterPath="$PROJECT_DIR$/public/lib/js/admin.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/js/client.js" afterPath="$PROJECT_DIR$/public/lib/js/client.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/js/preview.js" afterPath="$PROJECT_DIR$/public/lib/js/preview.js" />
     </list>
     <ignored path="remote-assist.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,21 +25,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="admin.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="admin.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/lib/js/admin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="34" selection-start="420" selection-end="420" vertical-scroll-proportion="0.1849315">
+            <state line="9" column="34" selection-start="420" selection-end="420" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="preview.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="preview.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/lib/js/preview.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="40" selection-start="1880" selection-end="1880" vertical-scroll-proportion="0.0">
+            <state line="62" column="44" selection-start="2065" selection-end="2065" vertical-scroll-proportion="1.3381295">
               <folding>
-                <marker date="1357201744000" expanded="true" signature="792:917" placeholder="..." />
+                <marker date="1357235115000" expanded="true" signature="792:917" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -53,10 +48,28 @@
       <file leaf-file-name="client.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/lib/js/client.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="76" selection-start="1431" selection-end="1431" vertical-scroll-proportion="0.0">
+            <state line="45" column="79" selection-start="1434" selection-end="1434" vertical-scroll-proportion="0.0">
               <folding>
-                <marker date="1357201178000" expanded="false" signature="1625:1754" placeholder="..." />
+                <marker date="1357243306000" expanded="true" signature="1626:1755" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mutation_summary.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/lib/js/mutation_summary.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="49" selection-start="221" selection-end="263" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="25" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -64,7 +77,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="302" selection-end="1265" vertical-scroll-proportion="-5.625">
+            <state line="103" column="53" selection-start="4299" selection-end="4299" vertical-scroll-proportion="-11.291667">
               <folding />
             </state>
           </provider>
@@ -74,9 +87,7 @@
         <entry file="file://$PROJECT_DIR$/public/admin.html">
           <provider selected="true" editor-type-id="text-editor">
             <state line="25" column="23" selection-start="902" selection-end="902" vertical-scroll-proportion="-15.625">
-              <folding>
-                <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -118,16 +129,17 @@
         <option value="$PROJECT_DIR$/public/demo2.html" />
         <option value="$PROJECT_DIR$/public/demo.html" />
         <option value="$PROJECT_DIR$/public/lib/css/client.css" />
-        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/admin.html" />
         <option value="$PROJECT_DIR$/public/preview.html" />
-        <option value="$PROJECT_DIR$/public/lib/js/client.js" />
         <option value="$PROJECT_DIR$/public/lib/js/admin.js" />
         <option value="$PROJECT_DIR$/public/lib/css/admin.css" />
+        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/lib/js/preview.js" />
+        <option value="$PROJECT_DIR$/public/lib/js/client.js" />
       </list>
     </option>
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="4" />
     <option name="y" value="22" />
@@ -262,15 +274,25 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="editor.preferences.import" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/index.html" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/index.html" />
+    <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration default="false" name="index.html" type="JavascriptDebugSession" factoryName="Local" temporary="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="chrome" />
+        <option name="fileUrl" value="file://$PROJECT_DIR$/public/index.html" />
+      </JSDebuggerConfigurationSettings>
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
       <JSDebuggerConfigurationSettings>
         <option name="engineId" value="chrome" />
@@ -278,7 +300,14 @@
       </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
-    <list size="0" />
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
@@ -315,8 +344,8 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23021583" sideWeight="0.67107004" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23021583" sideWeight="0.6010568" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989432" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -396,7 +425,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="47" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1357201178000" expanded="false" signature="1625:1754" placeholder="..." />
+            <marker date="1357243306000" expanded="true" signature="1626:1755" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -411,15 +440,51 @@
     <entry file="file://$PROJECT_DIR$/public/admin.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="45" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/lib/js/mutation_summary.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="49" selection-start="221" selection-end="263" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="96" selection-start="421" selection-end="421" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/css/client.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="1" selection-start="123" selection-end="123" vertical-scroll-proportion="0.1849315" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/css/admin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="17" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="103" column="53" selection-start="4299" selection-end="4299" vertical-scroll-proportion="-11.291667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/preview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="6" selection-start="22" selection-end="22" vertical-scroll-proportion="-0.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="23" selection-start="902" selection-end="902" vertical-scroll-proportion="-15.625">
           <folding />
         </state>
       </provider>
@@ -431,11 +496,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="96" selection-start="421" selection-end="421" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/lib/js/mutation_summary.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="49" selection-start="221" selection-end="263" vertical-scroll-proportion="0.0">
@@ -443,65 +503,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/lib/css/client.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="1" selection-start="123" selection-end="123" vertical-scroll-proportion="0.1849315">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="302" selection-end="1265" vertical-scroll-proportion="-5.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="23" selection-start="902" selection-end="902" vertical-scroll-proportion="-15.625">
-          <folding>
-            <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/preview.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="6" selection-start="22" selection-end="22" vertical-scroll-proportion="-0.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/lib/css/admin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="17" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/lib/js/client.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="76" selection-start="1431" selection-end="1431" vertical-scroll-proportion="0.0">
+        <state line="45" column="79" selection-start="1434" selection-end="1434" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1357201178000" expanded="false" signature="1625:1754" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/lib/js/preview.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="40" selection-start="1880" selection-end="1880" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1357201744000" expanded="true" signature="792:917" placeholder="..." />
+            <marker date="1357243306000" expanded="true" signature="1626:1755" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/lib/js/admin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="34" selection-start="420" selection-end="420" vertical-scroll-proportion="0.1849315">
+        <state line="9" column="34" selection-start="420" selection-end="420" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/js/preview.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="44" selection-start="2065" selection-end="2065" vertical-scroll-proportion="1.3381295">
+          <folding>
+            <marker date="1357235115000" expanded="true" signature="792:917" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

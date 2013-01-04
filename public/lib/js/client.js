@@ -43,11 +43,14 @@ function CreateSession(){
     socket.on('connect', function(){
         socket.emit('CreateSession', document.getElementById('SessionKey').value);
         socket.on('SessionStarted', function() {
-            socketSend({height: $(window).height(), width: $(window).width()})
+            socketSend({height: $(window).height(), width: $(window).width()});
             socketSend({ base: location.href.match(/^(.*\/)[^\/]*$/)[1] });
             socketSend(oDOM);
             SendMouse();
             $('body').append('<div id="AdminPointer" style="position: absolute; z-index: 9999; height: 30px; width: 30px; border-radius: 5em; background-color: orange; opacity:0.5; top: 1px"></div> ');
+            $(window).scroll(function(){
+                socketSend({scroll: $(window).scrollTop()});
+            });
         });
         socket.on('AdminMousePosition', function(msg) {
             $('#AdminPointer').css({'left': msg.PositionLeft - 15, 'top': msg.PositionTop});
