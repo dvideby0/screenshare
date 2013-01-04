@@ -19,7 +19,6 @@ function SendMouse(){
     }
 }
 socket.on('SessionStarted', function() {
-    $('body').append('<div id="ClientPointer" style="position: absolute; z-index: 1; height: 30px; width: 30px; border-radius: 5em; background-color: green; opacity:0.5; top: 1px"></div> ');
     SessionStarted();
     SendMouse();
 });
@@ -48,6 +47,7 @@ function SessionStarted(){
             }
         }
     });
+    window.parent.AddMouse();
 
     socket.on('changes', function(msg){
         if (msg.base){
@@ -62,5 +62,8 @@ function SessionStarted(){
         if(msg.scroll){
             $(window).scrollTop(msg.scroll);
         }
+    });
+    socket.on('ClientMousePosition', function(msg){
+        window.parent.MoveMouse(msg.PositionLeft, msg.PositionTop);
     });
 }
