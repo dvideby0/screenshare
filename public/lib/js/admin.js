@@ -1,4 +1,5 @@
 var frame = $('#ClientView').contents();
+window.location = 'admin.html?#';
 function StartSession(){
     var SessionKey = $('#SessionKey').val();
     $('#ClientView')[0].contentWindow.JoinRoom(SessionKey);
