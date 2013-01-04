@@ -26,10 +26,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="admin.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="admin.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/lib/js/admin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="43" selection-start="568" selection-end="568" vertical-scroll-proportion="0.27196652">
+            <state line="13" column="43" selection-start="568" selection-end="568" vertical-scroll-proportion="0.0">
               <folding>
                 <marker date="1357312362000" expanded="true" signature="360:485" placeholder="..." />
               </folding>
@@ -37,10 +37,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="preview.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="preview.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/lib/js/preview.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="32" selection-start="2007" selection-end="2007" vertical-scroll-proportion="-22.461538">
+            <state line="66" column="93" selection-start="2068" selection-end="2068" vertical-scroll-proportion="1.3561643">
               <folding />
             </state>
           </provider>
@@ -49,7 +49,7 @@
       <file leaf-file-name="client.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/lib/js/client.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="79" selection-start="1434" selection-end="1434" vertical-scroll-proportion="0.0">
+            <state line="77" column="0" selection-start="2858" selection-end="2858" vertical-scroll-proportion="0.0">
               <folding>
                 <marker date="1357243306000" expanded="true" signature="1626:1755" placeholder="..." />
               </folding>
@@ -69,7 +69,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="103" column="53" selection-start="4299" selection-end="4299" vertical-scroll-proportion="-11.291667">
+            <state line="103" column="53" selection-start="4299" selection-end="4299" vertical-scroll-proportion="-64.375">
               <folding />
             </state>
           </provider>
@@ -117,8 +117,8 @@
         <option value="$PROJECT_DIR$/public/lib/css/admin.css" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/lib/js/client.js" />
-        <option value="$PROJECT_DIR$/public/lib/js/preview.js" />
         <option value="$PROJECT_DIR$/public/lib/js/admin.js" />
+        <option value="$PROJECT_DIR$/public/lib/js/preview.js" />
       </list>
     </option>
   </component>
@@ -446,20 +446,6 @@
         <state line="9" column="1" selection-start="123" selection-end="123" vertical-scroll-proportion="0.1849315" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="53" selection-start="4299" selection-end="4299" vertical-scroll-proportion="-11.291667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="23" selection-start="902" selection-end="902" vertical-scroll-proportion="-15.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/lib/js/mutation_summary.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="49" selection-start="221" selection-end="263" vertical-scroll-proportion="-18.474577">
@@ -474,13 +460,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/lib/css/admin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="17" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="25" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0">
@@ -488,28 +467,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/lib/js/preview.js">
+    <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="32" selection-start="2007" selection-end="2007" vertical-scroll-proportion="-22.461538">
+        <state line="103" column="53" selection-start="4299" selection-end="4299" vertical-scroll-proportion="-64.375">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="23" selection-start="902" selection-end="902" vertical-scroll-proportion="-15.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/css/admin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="17" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/js/admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="43" selection-start="568" selection-end="568" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1357312362000" expanded="true" signature="360:485" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/lib/js/client.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="79" selection-start="1434" selection-end="1434" vertical-scroll-proportion="0.0">
+        <state line="77" column="0" selection-start="2858" selection-end="2858" vertical-scroll-proportion="0.0">
           <folding>
             <marker date="1357243306000" expanded="true" signature="1626:1755" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/lib/js/admin.js">
+    <entry file="file://$PROJECT_DIR$/public/lib/js/preview.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="43" selection-start="568" selection-end="568" vertical-scroll-proportion="0.27196652">
-          <folding>
-            <marker date="1357312362000" expanded="true" signature="360:485" placeholder="..." />
-          </folding>
+        <state line="66" column="93" selection-start="2068" selection-end="2068" vertical-scroll-proportion="1.3561643">
+          <folding />
         </state>
       </provider>
     </entry>

@@ -64,6 +64,6 @@ function SessionStarted(){
         }
     });
     socket.on('ClientMousePosition', function(msg){
-        window.parent.MoveMouse(msg.PositionLeft, msg.PositionTop);
+        window.parent.MoveMouse(msg.PositionLeft, msg.PositionTop - $(document).scrollTop());
     });
 }
