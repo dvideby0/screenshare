@@ -9,6 +9,7 @@ $(document).on('ready', function(){
         $('.page').hide();
         $('#' + Name + 'Page').show()
     });
+    AddMenu();
 });
 function socketSend(msg) {
     socket.emit('changeHappened', msg);
@@ -94,3 +95,25 @@ function SendMouse(){
         socket.emit('ClientMousePosition', {Room: document.getElementById('SessionKey').value, PositionLeft: e.pageX, PositionTop: e.pageY});
     }
 }
+
+function AddMenu(){
+    $('body').append('<div id="SlideMenu" style="background-color: #222222; color: #cccccc"><p class="rotate">HELP</p></div>');
+    $('#SlideMenu').css({position: 'fixed', left: ($(window).width() - 30), top: ($(window).height()/2) - 50, zIndex: 9998, width:100, height:100});
+    $('#SlideMenu').mouseenter(function(){
+        if($(this).offset().left == $(window).width() -30){
+            $('#SlideMenu').animate({left:'-=' + ($('#SlideMenu').width() - 30)},'fast');
+        }
+    });
+    $('#SlideMenu').mouseleave(function(){
+        if($(this).offset().left == $(window).width() - $('#SlideMenu').width()){
+            $(this).animate({left:'+=' + ($('#SlideMenu').width() - 30)},'fast');
+        }
+    });
+}
+
+$(window).resize(function() {
+    if(socket != undefined){
+        socketSend({height: $(window).height(), width: $(window).width()});
+    }
+    $('#SlideMenu').css({left: ($(window).width() - 30), top: ($(window).height()/2) - 50});
+});
