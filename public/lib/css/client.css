@@ -28,12 +28,14 @@ body {
 }
 table{
     border: none !important;
+    color: #ffffff;
 }
 #SlideMenu{
+    opacity: 0.6;
     border-radius: 10px 0 0 10px;
-    background-color: #0088cc;
+    background-color: #000000;
 }
 #MainMenuTD{
     border-radius: 15px 0 0 15px;
-    background-color: #0088cc;
+    background-color: #666666;
 }
