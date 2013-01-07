@@ -9,8 +9,7 @@ body {
     display: none;
 }
 .rotate {
-    width: 20px;
-    margin-top: 50px;
+    width: 30px;
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
@@ -26,4 +25,15 @@ body {
 
     /* Should be unset in IE9+ I think. */
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+table{
+    border: none !important;
+}
+#SlideMenu{
+    border-radius: 10px 0 0 10px;
+    background-color: #0088cc;
+}
+#MainMenuTD{
+    border-radius: 15px 0 0 15px;
+    background-color: #0088cc;
 }

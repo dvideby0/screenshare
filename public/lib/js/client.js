@@ -97,16 +97,17 @@ function SendMouse(){
 }
 
 function AddMenu(){
-    $('body').append('<div id="SlideMenu" style="background-color: #222222; color: #cccccc"><p class="rotate">HELP</p></div>');
-    $('#SlideMenu').css({position: 'fixed', left: ($(window).width() - 30), top: ($(window).height()/2) - 50, zIndex: 9998, width:100, height:100});
+    $('body').append('<table id="MenuTable" cellpadding="0"><tr><td><div id="SlideMenu"><p class="rotate">HELP</p></div></td><td id="MainMenuTD" style="height: 300px; width: 300px">Hello</td></tr></table>');
+    $('#SlideMenu').css({width:30, height:100, paddingTop: 80});
+    $('#MenuTable').css({position: 'fixed', zIndex: 9998, left: $(window).width() - 30, top: ($(window).height()/2) - 150, margin: 0, padding: 0});
     $('#SlideMenu').mouseenter(function(){
-        if($(this).offset().left == $(window).width() -30){
-            $('#SlideMenu').animate({left:'-=' + ($('#SlideMenu').width() - 30)},'fast');
+        if($('#MenuTable').offset().left == $(window).width() -30){
+            $('#MenuTable').animate({left:'-=' + ($('#MenuTable').width() - 30)},'fast');
         }
     });
-    $('#SlideMenu').mouseleave(function(){
-        if($(this).offset().left == $(window).width() - $('#SlideMenu').width()){
-            $(this).animate({left:'+=' + ($('#SlideMenu').width() - 30)},'fast');
+    $('#MenuTable').mouseleave(function(){
+        if($(this).offset().left == $(window).width() - $('#MenuTable').width()){
+            $(this).animate({left:'+=' + ($('#MenuTable').width() - 30)},'fast');
         }
     });
 }
