@@ -1,5 +1,5 @@
 var socket = io.connect('http://localhost:3001');
-
+var SessionKey;
 function SendMouse(){
     document.onmousemove = function(e) {
         if(!e) e = window.event;
@@ -23,6 +23,7 @@ socket.on('SessionStarted', function() {
     SendMouse();
 });
 function JoinRoom(key){
+    SessionKey = key;
     socket.emit('JoinRoom', key);
 }
 function SessionStarted(){
@@ -58,6 +59,9 @@ function SessionStarted(){
         }
         if(msg.args){
             mirror[msg.f].apply(mirror, msg.args);
+            if(msg.f == 'initialize'){
+                socket.emit('DOMLoaded', {room: SessionKey});
+            }
         }
         if(msg.scroll){
             $(window).scrollTop(msg.scroll);

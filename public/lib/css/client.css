@@ -36,6 +36,13 @@ table{
     background-color: #000000;
 }
 #MainMenuTD{
+    opacity: 0.9;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+    vertical-align: text-top;
     border-radius: 15px 0 0 15px;
-    background-color: #666666;
+    background-color: #bfd730;
+    color: #333333;
 }

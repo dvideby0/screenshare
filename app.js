@@ -15,13 +15,16 @@ io.sockets.on('connection', function(socket) {
         io.sockets.in(msg).emit('SessionStarted', '');
     });
     socket.on('ClientMousePosition', function(msg){
-        socket.broadcast.to(socket.Room).emit('ClientMousePosition', {PositionLeft:msg.PositionLeft, PositionTop:msg.PositionTop});
+        socket.broadcast.to(socket.room).emit('ClientMousePosition', {PositionLeft:msg.PositionLeft, PositionTop:msg.PositionTop});
     });
     socket.on('AdminMousePosition', function(msg){
         socket.broadcast.to(msg.room).emit('AdminMousePosition', {PositionLeft:msg.PositionLeft, PositionTop:msg.PositionTop});
     });
     socket.on('changeHappened', function(msg){
-        io.sockets.emit('changes', msg);
+        socket.broadcast.to(msg.room).emit('changes', msg.change);
+    });
+    socket.on('DOMLoaded', function(msg){
+        socket.broadcast.to(msg.room).emit('DOMLoaded', '');
     });
 });
 app.listen(3000);
