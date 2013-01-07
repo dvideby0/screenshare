@@ -1,4 +1,4 @@
-var socket = io.connect('http://localhost:3001');
+var socket = io.connect('http://yearofthecu.com:3001');
 var SessionKey;
 function SendMouse(){
     document.onmousemove = function(e) {
@@ -15,7 +15,7 @@ function SendMouse(){
                 + (doc && doc.scrollTop || body && body.scrollTop || 0)
                 - (doc.clientTop || 0);
         }
-        socket.emit('AdminMousePosition', {PositionLeft: e.pageX, PositionTop: e.pageY, room:$('#SessionID').val()});
+        socket.emit('AdminMousePosition', {PositionLeft: e.pageX, PositionTop: e.pageY - 15, room: SessionKey});
     }
 }
 socket.on('SessionStarted', function() {

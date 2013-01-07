@@ -1,0 +1,70 @@
+.rotate {
+    width: 30px;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+
+    /* also accepts left, right, top, bottom coordinates; not required, but a good idea for styling */
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+
+    /* Should be unset in IE9+ I think. */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+table{
+    border: none !important;
+    color: #ffffff;
+}
+#MenuTable{
+    position: fixed;
+    z-index: 9998;
+    margin: 0;
+    padding: 0;
+}
+#SlideMenu{
+    opacity: 0.6;
+    border-radius: 10px 0 0 10px;
+    background-color: #000000;
+    width: 30px;
+    height: 100px;
+    padding-top: 80px;
+}
+#MainMenuTD{
+    opacity: 0.9;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+    vertical-align: text-top;
+    border-radius: 15px 0 0 15px;
+    background-color: #bfd730;
+    color: #333333;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+}
+#RemoteAssistMessage{
+    text-align: justify;
+}
+#SessionKey{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 90%;
+    height: 30px;
+    font-size: 25px;
+}
+#AdminPointer{
+    position: absolute;
+    z-index: 9999;
+    height: 30px;
+    width: 30px;
+    border-radius: 5em;
+    background-color: orange;
+    opacity:0.5;
+    top: 1px;
+}

@@ -26,6 +26,10 @@
 </div>
 <div class="container-fluid">
     <div class="page" id="HomePage">
+        <div class="hero-unit">
+            <h1>Hello There Friend</h1>
+            <p>We like meeting new people. Take some time to tell us a little about yourself.</p>
+        </div>
         <h3>Some Really confusing form</h3>
         Acct Type<br />
         <select id="MySelect">
@@ -61,9 +65,39 @@
         <br /><br />
         <a class="btn btn-primary" href="javascript:$('#SubmitModal').modal('show')">Submit</a>
     </div>
+    <div class="page" id="AboutPage">
+        <div class="hero-unit">
+            <h1>Something a Little Different</h1>
+            <p>We want your experiences to be exceptional every time, that's what makes us different</p>
+            <div class="row-fluid" style="margin-top: 60px">
+                <div class="span3 offset1">
+                    <h3>Services</h3>
+                </div>
+                <div class="span3 offset1">
+                    <h3>Products</h3>
+                </div>
+                <div class="span3 offset1">
+                    <h3>Consulting</h3>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="page" id="ContactPage">
-        <h3>Need Help?</h3>
-        <p>We are here to help you 24/7. Please pick one of the following methods below which suite your needs.</p>
+        <div class="hero-unit">
+            <h1>Keep in Touch</h1>
+            <p>With so many options to choose, you are guaranteed to find the one that works for you</p>
+            <div class="row-fluid" style="margin-top: 60px">
+                <div class="span3 offset1">
+                    <h3>E-Mail</h3>
+                </div>
+                <div class="span3 offset1">
+                    <h3>Phone</h3>
+                </div>
+                <div class="span3 offset1">
+                    <h3>In Person</h3>
+                </div>
+            </div>
+        </div>
     </div>
     <div id="SubmitModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="SubmitModalLabel" aria-hidden="true">
         <div class="modal-header">
@@ -83,6 +117,6 @@
 <script type="text/javascript" src="lib/js/tree_mirror.js"></script>
 <script type="text/javascript" src="lib/js/jquery.js"></script>
 <script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
-<script type="text/javascript" src='http://localhost:3001/socket.io/socket.io.js'></script>
 <script type="text/javascript" src="lib/js/client.js"></script>
+<script type="text/javascript" src="lib/js/screenshare.js"></script>
 </html>
