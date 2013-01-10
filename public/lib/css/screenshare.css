@@ -16,10 +16,6 @@
     /* Should be unset in IE9+ I think. */
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
-table{
-    border: none !important;
-    color: #ffffff;
-}
 #MenuTable{
     position: fixed;
     z-index: 9998;
@@ -33,6 +29,7 @@ table{
     width: 30px;
     height: 100px;
     padding-top: 80px;
+    color: #ffffff;
 }
 #MainMenuTD{
     opacity: 0.9;

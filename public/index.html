@@ -38,32 +38,30 @@
             <option value="pre-paid">Pre-Paid</option>
             <option value="loan">Loan</option>
         </select><br />
-        Acct#<br />
+        Account Number<br />
         <input><br /><br />
         Blood Type<br />
         <input><br /><br />
-        Cubed Root of 360<br />
-        <input><br /><br />
-        Neighbor's Middle Name<br />
+        Cubed Root of 343<br />
+        <input id="croot"><br /><br />
+        Neighbor's Middle Name (optional)<br />
         <input><br />
-        <br />Acct#<br />
+        <br />Distance to closest star  (optional)<br />
         <input><br /><br />
-        Blood Type<br />
+        The 3rd wonder of the world  (optional)<br />
         <input><br /><br />
-        Cubed Root of 360<br />
-        <input><br /><br />
-        Neighbor's Middle Name<br />
+        The only positively charged polyatomic ion  (optional)<br />
         <input><br />
-        <br />Acct#<br />
+        <br />How long is 4 score  (optional)<br />
         <input><br /><br />
-        Blood Type<br />
+        The second largest producer of corn  (optional)<br />
         <input><br /><br />
-        Cubed Root of 360<br />
+        Cubed Root of 360  (optional)<br />
         <input><br /><br />
-        Neighbor's Middle Name<br />
+        How many of your friends like you  (optional)<br />
         <input>
         <br /><br />
-        <a class="btn btn-primary" href="javascript:$('#SubmitModal').modal('show')">Submit</a>
+        <a class="btn btn-primary" href="javascript:SubmitForm()">Submit</a>
     </div>
     <div class="page" id="AboutPage">
         <div class="hero-unit">
@@ -101,7 +99,7 @@
     </div>
     <div id="SubmitModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="SubmitModalLabel" aria-hidden="true">
         <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
             <h3 id="SubmitModelLabel">Success</h3>
         </div>
         <div class="modal-body">
@@ -111,10 +109,20 @@
             <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
         </div>
     </div>
+    <div id="FailModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="FailModalLabel" aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+            <h3 id="FailModelLabel">Submission Error</h3>
+        </div>
+        <div class="modal-body">
+            <h4>There has been an issue with your form submission. Please correct the issue and try again</h4>
+        </div>
+        <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+        </div>
+    </div>
 </div>
 </body>
-<script type="text/javascript" src="lib/js/mutation_summary.js"></script>
-<script type="text/javascript" src="lib/js/tree_mirror.js"></script>
 <script type="text/javascript" src="lib/js/jquery.js"></script>
 <script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="lib/js/client.js"></script>

@@ -8,3 +8,12 @@ $(document).on('ready', function(){
         $('#' + Name + 'Page').show()
     });
 });
+
+function SubmitForm(){
+    if($('#croot').val() != 7){
+        $('#FailModal').modal('show')
+    }
+    else{
+        $('#SubmitModal').modal('show')
+    }
+}

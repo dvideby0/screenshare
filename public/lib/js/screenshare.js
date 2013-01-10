@@ -1,16 +1,32 @@
 var socket = undefined;
 var SessionKey;
 var oDOM;
+
+if (typeof jQuery == 'undefined') {
+    var jqref=document.createElement("script");
+    jqref.setAttribute("type", "text/javascript");
+    jqref.setAttribute("src", "http://code.jquery.com/jquery-1.8.3.min.js");
+    document.getElementsByTagName("head")[0].appendChild(jqref);
+}
+
 $(document).on('ready', function(){
     var fileref=document.createElement("link");
     fileref.setAttribute("rel", "stylesheet");
     fileref.setAttribute("type", "text/css");
-    fileref.setAttribute("href", "lib/css/screenshare.css");
+    fileref.setAttribute("href", "http://yearofthecu.com:3000/lib/css/screenshare.css");
     document.getElementsByTagName("head")[0].appendChild(fileref);
     var fileref2=document.createElement("script");
     fileref2.setAttribute("type", "text/javascript");
-    fileref2.setAttribute("src", "http://yeaofthecu.com:3001/socket.io/socket.io.js");
+    fileref2.setAttribute("src", "http://yearofthecu.com:3000/lib/js/mutation_summary.js");
     document.getElementsByTagName("head")[0].appendChild(fileref2);
+    var fileref3=document.createElement("script");
+    fileref3.setAttribute("type", "text/javascript");
+    fileref3.setAttribute("src", "http://yearofthecu.com:3000/lib/js/tree_mirror.js");
+    document.getElementsByTagName("head")[0].appendChild(fileref3);
+    var fileref4=document.createElement("script");
+    fileref4.setAttribute("type", "text/javascript");
+    fileref4.setAttribute("src", "http://yearofthecu.com:3001/socket.io/socket.io.js");
+    document.getElementsByTagName("head")[0].appendChild(fileref4);
     AddMenu();
 });
 function socketSend(msg) {
