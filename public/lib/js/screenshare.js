@@ -2,14 +2,23 @@ var socket = undefined;
 var SessionKey;
 var oDOM;
 
-if (typeof jQuery == 'undefined') {
-    var jqref=document.createElement("script");
-    jqref.setAttribute("type", "text/javascript");
-    jqref.setAttribute("src", "http://code.jquery.com/jquery-1.8.3.min.js");
-    document.getElementsByTagName("head")[0].appendChild(jqref);
-}
 
-$(document).on('ready', function(){
+if (typeof jQuery == 'undefined') {
+    window.$ && main() || (function() {
+        var jquery = document.createElement("script");
+        jquery.setAttribute("type","text/javascript");
+        jquery.setAttribute("src","http://code.jquery.com/jquery-1.8.3.min.js");
+        jquery.onload = main;
+        jquery.onreadystatechange = function() {
+            if (this.readyState == "complete" || this.readyState == "loaded") main();
+        };
+        (document.getElementsByTagName("head")[0] || document.documentElement).appendChild(jquery);
+    })();
+}
+else{
+    main();
+}
+function main() {
     var fileref=document.createElement("link");
     fileref.setAttribute("rel", "stylesheet");
     fileref.setAttribute("type", "text/css");
@@ -28,14 +37,23 @@ $(document).on('ready', function(){
     fileref4.setAttribute("src", "http://yearofthecu.com:3001/socket.io/socket.io.js");
     document.getElementsByTagName("head")[0].appendChild(fileref4);
     AddMenu();
-});
+
+    window.addEventListener('load', function() {
+        startMirroring();
+    });
+
+    $(window).resize(function() {
+        if(socket != undefined){
+            socketSend({height: $(window).height(), width: $(window).width()});
+        }
+        $('#MenuTable').css({left: ($(window).width() - 30), top: ($(window).height()/2) - 150});
+    });
+}
+
 function socketSend(msg) {
     socket.emit('changeHappened', {change: msg, room: SessionKey});
 }
 
-window.addEventListener('load', function() {
-    startMirroring();
-});
 function startMirroring() {
     var mirrorClient;
     mirrorClient = new TreeMirrorClient(document, {
@@ -154,10 +172,3 @@ function AddMenu(){
         }
     });
 }
-
-$(window).resize(function() {
-    if(socket != undefined){
-        socketSend({height: $(window).height(), width: $(window).width()});
-    }
-    $('#MenuTable').css({left: ($(window).width() - 30), top: ($(window).height()/2) - 150});
-});

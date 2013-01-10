@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55e27d9a-22ad-408f-add0-990bf9fc7042" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/css/screenshare.css" afterPath="$PROJECT_DIR$/public/lib/css/screenshare.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/js/client.js" afterPath="$PROJECT_DIR$/public/lib/js/client.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/js/screenshare.js" afterPath="$PROJECT_DIR$/public/lib/js/screenshare.js" />
     </list>
     <ignored path="remote-assist.iws" />
@@ -46,12 +42,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="screenshare.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="screenshare.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/lib/js/screenshare.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="134" column="20" selection-start="5050" selection-end="5056" vertical-scroll-proportion="-8.846154">
+            <state line="25" column="66" selection-start="941" selection-end="941" vertical-scroll-proportion="0.54269177">
               <folding>
-                <marker date="1357840983000" expanded="true" signature="5549:5559" placeholder="..." />
+                <marker date="1357855920000" expanded="true" signature="6103:6113" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -75,10 +71,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="screenshare.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="screenshare.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/lib/css/screenshare.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="1" selection-start="1507" selection-end="1507" vertical-scroll-proportion="0.8767123">
+            <state line="66" column="1" selection-start="1507" selection-end="1507" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -129,8 +125,8 @@
         <option value="$PROJECT_DIR$/public/preview.html" />
         <option value="$PROJECT_DIR$/public/lib/css/screenshare.css" />
         <option value="$PROJECT_DIR$/public/lib/js/client.js" />
-        <option value="$PROJECT_DIR$/public/lib/js/screenshare.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/public/lib/js/screenshare.js" />
       </list>
     </option>
   </component>
@@ -501,19 +497,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/lib/js/screenshare.js">
+    <entry file="file://$PROJECT_DIR$/public/lib/css/screenshare.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="20" selection-start="5050" selection-end="5056" vertical-scroll-proportion="-8.846154">
-          <folding>
-            <marker date="1357840983000" expanded="true" signature="5549:5559" placeholder="..." />
-          </folding>
+        <state line="66" column="1" selection-start="1507" selection-end="1507" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/lib/css/screenshare.css">
+    <entry file="file://$PROJECT_DIR$/public/lib/js/screenshare.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="1" selection-start="1507" selection-end="1507" vertical-scroll-proportion="0.8767123">
-          <folding />
+        <state line="25" column="66" selection-start="941" selection-end="941" vertical-scroll-proportion="0.54269177">
+          <folding>
+            <marker date="1357855920000" expanded="true" signature="6103:6113" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
