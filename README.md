@@ -1,8 +1,21 @@
-Screenshare application that allows a user to share their current session on a website.
+#Screenshare
+
+Screenshare is an application that allows a user to share their current session on a website. This currently works for Firefox, Chrome, Opera and Safari. For mobile devices, Chrome and Firefox are supported on Android.
 
 TODOs:
-1. configure mutation observers to send over only affected DOM elements
-2. Configure Mutation observers to detect removal and addition of DOM elements
-3. Detect scrolling and emulate on admin side
-4. correct mouse pointer offset
-5. Find proper way to hard code currently computed css to each element before initial sendscreen
+
+1. configure mutation observers to send over only affected DOM elements (completed)
+
+2. Configure Mutation observers to detect removal and addition of DOM elements (completed)
+
+3. Detect scrolling and emulate on admin side (completed)
+
+4. correct mouse pointer offset (completed)
+
+5. Find proper way to hard code currently computed css to each element before initial sendscreen (completed)
+
+6. Support multi page sites
+
+7. IE support
+
+8. Full mobile support
