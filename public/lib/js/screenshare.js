@@ -55,6 +55,10 @@ function main() {
 
     window.addEventListener('load', function() {
         startMirroring();
+        if(sessvars.Session){
+            alert(sessvars.Session);
+            ContinueSession();
+        }
     });
 
     $(window).resize(function() {
@@ -89,6 +93,30 @@ function startMirroring() {
         }
     });
 }
+function ContinueSession(){
+    socket = io.connect('http://yearofthecu.com:3001');
+    socket.on('connect', function(){
+        socket.emit('PageChange', sessvars.Session);
+        $('#RemoteStatus').text('Status: Waiting for connection.');
+        socket.on('SessionStarted', function() {
+            $('#RemoteStatus').text('Status: Connected!');
+            socketSend({height: $(window).height(), width: $(window).width()});
+            socketSend({ base: location.href.match(/^(.*\/)[^\/]*$/)[1] });
+            socketSend(oDOM);
+            SendMouse();
+            $('body').append('<div id="AdminPointer"></div> ');
+            $(window).scroll(function(){
+                socketSend({scroll: $(window).scrollTop()});
+            });
+        });
+        socket.on('AdminMousePosition', function(msg) {
+            $('#AdminPointer').css({'left': msg.PositionLeft - 15, 'top': msg.PositionTop});
+        });
+        socket.on('DOMLoaded', function(){
+            BindEverything();
+        })
+    });
+}
 function CreateSession(){
     socket = io.connect('http://yearofthecu.com:3001');
     if(sessvars.Session){
@@ -114,30 +142,31 @@ function CreateSession(){
             })
         });
     }
-    SessionKey = document.getElementById('SessionKey').value;
-    socket.on('connect', function(){
-        socket.emit('CreateSession', SessionKey);
-        $('#RemoteStatus').text('Status: Waiting for connection.');
-        socket.on('SessionStarted', function() {
-            sessvars.Session = SessionKey;
-            $('#RemoteStatus').text('Status: Connected!');
-            socketSend({height: $(window).height(), width: $(window).width()});
-            socketSend({ base: location.href.match(/^(.*\/)[^\/]*$/)[1] });
-            socketSend(oDOM);
-            SendMouse();
-            $('body').append('<div id="AdminPointer"></div> ');
-            $(window).scroll(function(){
-                socketSend({scroll: $(window).scrollTop()});
+    else{
+        SessionKey = document.getElementById('SessionKey').value;
+        socket.on('connect', function(){
+            socket.emit('CreateSession', SessionKey);
+            $('#RemoteStatus').text('Status: Waiting for connection.');
+            socket.on('SessionStarted', function() {
+                sessvars.Session = SessionKey;
+                $('#RemoteStatus').text('Status: Connected!');
+                socketSend({height: $(window).height(), width: $(window).width()});
+                socketSend({ base: location.href.match(/^(.*\/)[^\/]*$/)[1] });
+                socketSend(oDOM);
+                SendMouse();
+                $('body').append('<div id="AdminPointer"></div> ');
+                $(window).scroll(function(){
+                    socketSend({scroll: $(window).scrollTop()});
+                });
             });
+            socket.on('AdminMousePosition', function(msg) {
+                $('#AdminPointer').css({'left': msg.PositionLeft - 15, 'top': msg.PositionTop});
+            });
+            socket.on('DOMLoaded', function(){
+                BindEverything();
+            })
         });
-        socket.on('AdminMousePosition', function(msg) {
-            $('#AdminPointer').css({'left': msg.PositionLeft - 15, 'top': msg.PositionTop});
-        });
-        socket.on('DOMLoaded', function(){
-            BindEverything();
-        })
-    });
-
+    }
 }
 
 function BindEverything(){
