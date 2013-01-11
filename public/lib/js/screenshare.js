@@ -2,22 +2,37 @@ var socket = undefined;
 var SessionKey;
 var oDOM;
 
+(function() {
+    var sessionjs = document.createElement("script");
+    sessionjs.setAttribute("type","text/javascript");
+    sessionjs.setAttribute("src","http://yearofthecu.com:3001/lib/js/session.js");
+    sessionjs.onload = init;
+    sessionjs.onreadystatechange = function() {
+        if (this.readyState == "complete" || this.readyState == "loaded") init();
+    };
+    (document.getElementsByTagName("head")[0] || document.documentElement).appendChild(sessionjs);
+})();
 
-if (typeof jQuery == 'undefined') {
-    window.$ && main() || (function() {
-        var jquery = document.createElement("script");
-        jquery.setAttribute("type","text/javascript");
-        jquery.setAttribute("src","http://code.jquery.com/jquery-1.8.3.min.js");
-        jquery.onload = main;
-        jquery.onreadystatechange = function() {
-            if (this.readyState == "complete" || this.readyState == "loaded") main();
-        };
-        (document.getElementsByTagName("head")[0] || document.documentElement).appendChild(jquery);
-    })();
+function init(){
+    if (typeof jQuery == 'undefined') {
+        window.$ && main() || (function() {
+            var jquery = document.createElement("script");
+            jquery.setAttribute("type","text/javascript");
+            jquery.setAttribute("src","http://code.jquery.com/jquery-1.8.3.min.js");
+            jquery.onload = main;
+            jquery.onreadystatechange = function() {
+                if (this.readyState == "complete" || this.readyState == "loaded") main();
+            };
+            (document.getElementsByTagName("head")[0] || document.documentElement).appendChild(jquery);
+        })();
+    }
+    else{
+        main();
+    }
 }
-else{
-    main();
-}
+
+
+
 function main() {
     var fileref=document.createElement("link");
     fileref.setAttribute("rel", "stylesheet");
@@ -51,7 +66,7 @@ function main() {
 }
 
 function socketSend(msg) {
-    socket.emit('changeHappened', {change: msg, room: SessionKey});
+    socket.emit('changeHappened', {change: msg, room: sessvars.Session});
 }
 
 function startMirroring() {
@@ -76,11 +91,35 @@ function startMirroring() {
 }
 function CreateSession(){
     socket = io.connect('http://yearofthecu.com:3001');
+    if(sessvars.Session){
+        socket.on('connect', function(){
+            socket.emit('PageChange', sessvars.Session);
+            $('#RemoteStatus').text('Status: Waiting for connection.');
+            socket.on('SessionStarted', function() {
+                $('#RemoteStatus').text('Status: Connected!');
+                socketSend({height: $(window).height(), width: $(window).width()});
+                socketSend({ base: location.href.match(/^(.*\/)[^\/]*$/)[1] });
+                socketSend(oDOM);
+                SendMouse();
+                $('body').append('<div id="AdminPointer"></div> ');
+                $(window).scroll(function(){
+                    socketSend({scroll: $(window).scrollTop()});
+                });
+            });
+            socket.on('AdminMousePosition', function(msg) {
+                $('#AdminPointer').css({'left': msg.PositionLeft - 15, 'top': msg.PositionTop});
+            });
+            socket.on('DOMLoaded', function(){
+                BindEverything();
+            })
+        });
+    }
     SessionKey = document.getElementById('SessionKey').value;
     socket.on('connect', function(){
         socket.emit('CreateSession', SessionKey);
         $('#RemoteStatus').text('Status: Waiting for connection.');
         socket.on('SessionStarted', function() {
+            sessvars.Session = SessionKey;
             $('#RemoteStatus').text('Status: Connected!');
             socketSend({height: $(window).height(), width: $(window).width()});
             socketSend({ base: location.href.match(/^(.*\/)[^\/]*$/)[1] });

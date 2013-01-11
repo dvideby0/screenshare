@@ -10,6 +10,10 @@ io.sockets.on('connection', function(socket) {
     socket.on('CreateSession', function(msg){
         socket.join(msg);
     });
+    socket.on('PageChange', function(msg){
+        socket.join(msg);
+        socket.broadcast.to(msg).emit('SessionStarted', '');
+    });
     socket.on('JoinRoom', function(msg){
         socket.join(msg);
         io.sockets.in(msg).emit('SessionStarted', '');
