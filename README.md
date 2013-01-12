@@ -11,6 +11,8 @@ You must have NodeJS > 0.6.x installed, with socket.io and express modules. You 
     npm install socket.io
     npm install express
 
+######Run the Example
+
 1. Run app.js. `node app.js`
     
 2. Navigate in your browser to `http://localhost:3000 (Client Page)` and `http://localhost:3000/admin.html (Admin Page)`
@@ -25,8 +27,21 @@ You must have NodeJS > 0.6.x installed, with socket.io and express modules. You 
 
     > Now you should be able to see exactly what is happening on the client screen. There are still plenty of bugs with this application but it is in a usable state for anyone to begin playing with.
 
+######How To use
 
+1. Add the screenshare.js script `public/lib/js/screenshare.js` before the closing body tag `</body>` on your html file(s)
 
+2. Run the app.js `node app.js`
+
+3. Open your website (there should now be a help tab on the right of your page)
+
+4. Enter in a key, then click the Create Key button.
+
+5. Open up another browser page to `http://localhost:3000/admin.html`
+
+6. On the admin page type the key you created on your site and hit enter
+
+    > Now you should be able to see exactly what is happening on the client screen. There are still plenty of bugs with this application but it is in a usable state for anyone to begin playing with.
 
 ##TODOs:
 
