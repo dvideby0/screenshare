@@ -6,7 +6,7 @@ var oDOM;
     var sessionjs = document.createElement("script");
     sessionjs.setAttribute("type","text/javascript");
     sessionjs.setAttribute("src","http://yearofthecu.com:3001/lib/js/session.js");
-    sessionjs.onload = init;
+    sessionjs.onload = init();
     sessionjs.onreadystatechange = function() {
         if (this.readyState == "complete" || this.readyState == "loaded") init();
     };
@@ -19,7 +19,7 @@ function init(){
             var jquery = document.createElement("script");
             jquery.setAttribute("type","text/javascript");
             jquery.setAttribute("src","http://code.jquery.com/jquery-1.8.3.min.js");
-            jquery.onload = main;
+            jquery.onload = main();
             jquery.onreadystatechange = function() {
                 if (this.readyState == "complete" || this.readyState == "loaded") main();
             };
@@ -55,10 +55,6 @@ function main() {
 
     window.addEventListener('load', function() {
         startMirroring();
-        if(sessvars.Session){
-            alert(sessvars.Session);
-            ContinueSession();
-        }
     });
 
     $(window).resize(function() {
@@ -92,6 +88,9 @@ function startMirroring() {
             }
         }
     });
+    if(sessvars.Session){
+        ContinueSession();
+    }
 }
 function ContinueSession(){
     socket = io.connect('http://yearofthecu.com:3001');

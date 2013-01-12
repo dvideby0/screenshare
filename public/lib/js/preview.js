@@ -48,6 +48,7 @@ function SessionStarted(){
             }
         }
     });
+    window.parent.RemoveMouse();
     window.parent.AddMouse();
 
     socket.on('changes', function(msg){
