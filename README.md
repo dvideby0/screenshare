@@ -19,3 +19,9 @@ TODOs:
 7. IE support
 
 8. Full mobile support
+
+
+
+##Credits
+
+This application makes use of the [mutation-summary](http://code.google.com/p/mutation-summary/) library developed by Rafael Weinstein

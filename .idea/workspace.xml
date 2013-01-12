@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55e27d9a-22ad-408f-add0-990bf9fc7042" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/js/screenshare.js" afterPath="$PROJECT_DIR$/public/lib/js/screenshare.js" />
     </list>
@@ -35,10 +35,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="preview.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="preview.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/lib/js/preview.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="7" selection-start="2075" selection-end="2075" vertical-scroll-proportion="1.1917614">
+            <state line="29" column="33" selection-start="940" selection-end="940" vertical-scroll-proportion="-16.73077">
               <folding />
             </state>
           </provider>
@@ -47,10 +47,19 @@
       <file leaf-file-name="screenshare.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/lib/js/screenshare.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="36" selection-start="2443" selection-end="2443" vertical-scroll-proportion="-6.3461537">
+            <state line="143" column="7" selection-start="5554" selection-end="5554" vertical-scroll-proportion="-15.769231">
               <folding>
-                <marker date="1357944959000" expanded="true" signature="8975:8985" placeholder="..." />
+                <marker date="1357950294000" expanded="true" signature="7827:7837" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="95" selection-start="809" selection-end="809" vertical-scroll-proportion="0.5611511">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -58,7 +67,7 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="34" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0">
+            <state line="16" column="34" selection-start="633" selection-end="633" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -131,9 +140,9 @@
         <option value="$PROJECT_DIR$/public/lib/js/client.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/lib/js/session.js" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/public/lib/js/screenshare.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -488,13 +497,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="22" selection-start="699" selection-end="699" vertical-scroll-proportion="0.43165466">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/lib/js/admin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="33" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0">
@@ -504,25 +506,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/js/preview.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="33" selection-start="940" selection-end="940" vertical-scroll-proportion="-16.73077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="34" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0">
+        <state line="16" column="34" selection-start="633" selection-end="633" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/lib/js/screenshare.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="36" selection-start="2443" selection-end="2443" vertical-scroll-proportion="-6.3461537">
+        <state line="143" column="7" selection-start="5554" selection-end="5554" vertical-scroll-proportion="-15.769231">
           <folding>
-            <marker date="1357944959000" expanded="true" signature="8975:8985" placeholder="..." />
+            <marker date="1357950294000" expanded="true" signature="7827:7837" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/lib/js/preview.js">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="7" selection-start="2075" selection-end="2075" vertical-scroll-proportion="1.1917614">
+        <state line="26" column="95" selection-start="809" selection-end="809" vertical-scroll-proportion="0.5611511">
           <folding />
         </state>
       </provider>

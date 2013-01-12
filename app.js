@@ -12,6 +12,7 @@ io.sockets.on('connection', function(socket) {
     });
     socket.on('PageChange', function(msg){
         socket.join(msg);
+        socket.broadcast.to(msg).emit('PageChanged');
         socket.broadcast.to(msg).emit('SessionStarted', '');
         console.log('PageChange');
     });
