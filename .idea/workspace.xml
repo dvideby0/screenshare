@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55e27d9a-22ad-408f-add0-990bf9fc7042" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="remote-assist.iws" />
@@ -57,7 +56,7 @@
       <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="49" selection-start="533" selection-end="533" vertical-scroll-proportion="0.41007194">
+            <state line="68" column="78" selection-start="2041" selection-end="2041" vertical-scroll-proportion="0.95683455">
               <folding />
             </state>
           </provider>
@@ -530,7 +529,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="49" selection-start="533" selection-end="533" vertical-scroll-proportion="0.41007194">
+        <state line="68" column="78" selection-start="2041" selection-end="2041" vertical-scroll-proportion="0.95683455">
           <folding />
         </state>
       </provider>

@@ -11,27 +11,19 @@ You must have NodeJS > 6.x installed, with socket.io and express modules.
     npm install socket.io
     npm install express
 
-1. Run app.js
+1. Run app.js. `node app.js`
+    
+2. Navigate in your browser to `http://localhost:3000 (Client Page)` and `http://localhost:3000/admin.html (Admin Page)`
 
-    node app.js.
-
-2. Navigate in your browser to
-
-    http://localhost:3000 (Client Page)
-
-    http://localhost:3000/admin.html (Admin Page)
-
-This will bring up 2 pages. The first page will be the client page and the other will be the administration page.
+    >   This will bring up 2 pages. The first page will be the client page and the other will be the administration page.
 
 3. On the client page mouse over the 'Help' tab
 
 4. Enter in a key, then click the Create Key button.
 
-5. On the admin page enter in the key you just created and hit enter.
+5. On the admin page type in the key you just created and hit enter.
 
-
-
-Now you should be able to see exactly what is happening on the client screen. There are still plenty of bugs with this application but it is in a usable state for anyone to begin playing with.
+    > Now you should be able to see exactly what is happening on the client screen. There are still plenty of bugs with this application but it is in a usable state for anyone to begin playing with.
 
 
 
@@ -70,6 +62,8 @@ The ever so awesome [jQuery](http://jquery.com) library.
 
 ###Server
 
-[NodeJS](http://nodejs.org)
-[Socket.io](http://socket.io)
-[Express](http://expressjs.com)
+[NodeJS](http://nodejs.org) - Server side JavaScript.
+
+[Socket.io](http://socket.io) - Library for NodeJS that does an awesome job at handling websockets.
+
+[Express](http://expressjs.com) - Extremely powerful web framework for NodeJS.
