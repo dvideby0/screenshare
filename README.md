@@ -40,7 +40,7 @@ You must have NodeJS > 0.6.x installed, with socket.io and express modules. You 
 
 5. Find proper way to hard code currently computed css to each element before initial sendscreen (completed)
 
-6. Support multi page sites
+6. Support multi page sites (working but still a little buggy)
 
 7. IE support
 
