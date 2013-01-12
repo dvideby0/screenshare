@@ -24,4 +24,8 @@ TODOs:
 
 ##Credits
 
-This application makes use of the [mutation-summary](http://code.google.com/p/mutation-summary/) library developed by Rafael Weinstein
+This application makes use of the [mutation-summary](http://code.google.com/p/mutation-summary/) library developed by Rafael Weinstein.
+
+The ever so awesome [jQuery](http://jquery.com) library.
+
+[sessvars](http://www.thomasfrank.se/sessionvars.html) by Thomas Frank.
