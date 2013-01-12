@@ -17,8 +17,9 @@ You must have NodeJS > 6.x installed, with socket.io and express modules.
 
 2. Navigate in your browser to
 
-    http://localhost:3000
-    http://localhost:3000/admin.html
+    http://localhost:3000 (Client Page)
+
+    http://localhost:3000/admin.html (Admin Page)
 
 This will bring up 2 pages. The first page will be the client page and the other will be the administration page.
 
