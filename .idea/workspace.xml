@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55e27d9a-22ad-408f-add0-990bf9fc7042" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/js/preview.js" afterPath="$PROJECT_DIR$/public/lib/js/preview.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/js/screenshare.js" afterPath="$PROJECT_DIR$/public/lib/js/screenshare.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/preview.html" afterPath="$PROJECT_DIR$/public/preview.html" />
     </list>
     <ignored path="remote-assist.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,16 +38,16 @@
       <file leaf-file-name="preview.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/lib/js/preview.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="26" selection-start="906" selection-end="906" vertical-scroll-proportion="-8.423077">
+            <state line="0" column="41" selection-start="41" selection-end="41" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="78" selection-start="2823" selection-end="2823" vertical-scroll-proportion="0.95815897">
+            <state line="74" column="0" selection-start="2504" selection-end="2504" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -69,10 +71,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/index.html">
+      <file leaf-file-name="screenshare.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/lib/js/screenshare.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="128" column="0" selection-start="5339" selection-end="5407" vertical-scroll-proportion="-24.5">
+            <state line="119" column="41" selection-start="4433" selection-end="4433" vertical-scroll-proportion="-43.307693">
+              <folding>
+                <marker date="1357978786000" expanded="true" signature="7740:7750" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="preview.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/preview.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="52" selection-start="282" selection-end="282" vertical-scroll-proportion="0.10623229">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/admin.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="7" selection-start="1145" selection-end="1145" vertical-scroll-proportion="-18.75">
               <folding />
             </state>
           </provider>
@@ -97,16 +119,16 @@
         <option value="$USER_HOME$/Library/Caches/TemporaryItems/1-preview.html" />
         <option value="$USER_HOME$/Library/Caches/TemporaryItems/1-index.html" />
         <option value="$PROJECT_DIR$/public/lib/css/client.css" />
-        <option value="$PROJECT_DIR$/public/preview.html" />
         <option value="$PROJECT_DIR$/public/lib/css/screenshare.css" />
         <option value="$PROJECT_DIR$/public/lib/js/client.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/lib/js/session.js" />
         <option value="$PROJECT_DIR$/public/lib/js/admin.js" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/public/lib/js/screenshare.js" />
-        <option value="$PROJECT_DIR$/public/lib/js/preview.js" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/public/lib/js/preview.js" />
+        <option value="$PROJECT_DIR$/public/lib/js/screenshare.js" />
+        <option value="$PROJECT_DIR$/public/preview.html" />
       </list>
     </option>
   </component>
@@ -407,30 +429,9 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-33.368645" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/lib/js/client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="39" selection-start="476" selection-end="476" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/lib/css/screenshare.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="66" column="1" selection-start="1507" selection-end="1507" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/preview.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="58" selection-start="288" selection-end="288" vertical-scroll-proportion="0.10964912">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="7" selection-start="1145" selection-end="1145" vertical-scroll-proportion="0.6373938">
           <folding />
         </state>
       </provider>
@@ -446,9 +447,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
+    <entry file="file://$PROJECT_DIR$/public/lib/js/tree_mirror.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="128" column="0" selection-start="5339" selection-end="5407" vertical-scroll-proportion="-24.5">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="0" selection-start="2504" selection-end="2504" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -456,6 +466,20 @@
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="54" selection-start="538" selection-end="538" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/js/client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="39" selection-start="476" selection-end="476" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/js/preview.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="41" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -469,34 +493,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/lib/js/screenshare.js">
+    <entry file="file://$PROJECT_DIR$/public/admin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="57" selection-start="4540" selection-end="4541" vertical-scroll-proportion="0.33285093">
-          <folding>
-            <marker date="1357977638000" expanded="true" signature="7782:7792" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/lib/js/tree_mirror.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/lib/js/preview.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="26" selection-start="906" selection-end="906" vertical-scroll-proportion="-8.423077">
+        <state line="30" column="7" selection-start="1145" selection-end="1145" vertical-scroll-proportion="-18.75">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="78" selection-start="2823" selection-end="2823" vertical-scroll-proportion="0.95815897">
+        <state line="128" column="0" selection-start="5339" selection-end="5407" vertical-scroll-proportion="0.8435171">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/js/screenshare.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="41" selection-start="4433" selection-end="4433" vertical-scroll-proportion="-43.307693">
+          <folding>
+            <marker date="1357978786000" expanded="true" signature="7740:7750" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/preview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="52" selection-start="282" selection-end="282" vertical-scroll-proportion="0.10623229">
           <folding />
         </state>
       </provider>
