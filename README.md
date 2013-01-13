@@ -45,21 +45,23 @@ You must have NodeJS > 0.6.x installed, with socket.io and express modules. You 
 
 ##TODOs:
 
-1. configure mutation observers to send over only affected DOM elements (completed)
+1. Configure mutation observers to send over only affected DOM elements **(completed)**
 
-2. Configure Mutation observers to detect removal and addition of DOM elements (completed)
+2. Configure Mutation observers to detect removal and addition of DOM elements **(completed)**
 
-3. Detect scrolling and emulate on admin side (completed)
+3. Detect scrolling and emulate on admin side **(completed)**
 
-4. correct mouse pointer offset (completed)
+4. Correct mouse pointer offset **(completed)**
 
-5. Find proper way to hard code currently computed css to each element before initial sendscreen (completed)
+5. Find proper way to hard code currently computed css to each element before initial sendscreen **(completed)**
 
-6. Support multi page sites (working but still a little buggy)
+6. Correct issues with dynamically loaded scripts not working across all browsers **(not started)**
 
-7. IE support
+7. Support multi page sites **(working but still a little buggy)**
 
-8. Full mobile support
+8. IE support **(starting to test Chrome Frame as a workaround)**
+
+9. Full mobile support **(not started)**
 
 
 
@@ -74,6 +76,8 @@ This application makes use of the [mutation-summary](http://code.google.com/p/mu
 The ever so awesome [jQuery](http://jquery.com) library.
 
 [sessvars](http://www.thomasfrank.se/sessionvars.html) by Thomas Frank.
+
+[Chrome Frame](https://developers.google.com/chrome/chrome-frame/) by Google which is an IE plugin to allow IE users to have all the advantages of using Chrome
 
 ###Server
 

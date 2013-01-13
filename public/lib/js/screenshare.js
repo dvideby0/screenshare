@@ -5,13 +5,26 @@ var oDOM;
 (function() {
     var sessionjs = document.createElement("script");
     sessionjs.setAttribute("type","text/javascript");
-    sessionjs.setAttribute("src","http://localhost:3001/lib/js/session.js");
+    sessionjs.setAttribute("src","http://yearofthecu.com:3001/lib/js/session.js");
     sessionjs.onload = init();
     sessionjs.onreadystatechange = function() {
         if (this.readyState == "complete" || this.readyState == "loaded") init();
     };
     (document.getElementsByTagName("head")[0] || document.documentElement).appendChild(sessionjs);
 })();
+
+var isIE = /*@cc_on!@*/false;
+if(isIE){
+    var ChromeTabTag = document.createElement('meta');
+    ChromeTabTag.httpEquiv = "X-UA-Compatible";
+    ChromeTabTag.content = "chrome=1";
+    document.getElementsByTagName('head')[0].appendChild(ChromeTabTag);
+    var ChromeTabScript = document.createElement("script");
+    ChromeTabScript.setAttribute("type", "text/javascript");
+    ChromeTabScript.setAttribute("src", "http//google.com/tools/dlpage/res/chromeframe/script/CFInstall.min.js");
+    document.getElementsByTagName("head")[0].appendChild(ChromeTabScript);
+    CFInstall.require();
+}
 
 function init(){
     if (typeof jQuery == 'undefined') {
@@ -34,23 +47,23 @@ function init(){
 
 
 function main() {
-    var fileref=document.createElement("link");
-    fileref.setAttribute("rel", "stylesheet");
-    fileref.setAttribute("type", "text/css");
-    fileref.setAttribute("href", "http://localhost:3000/lib/css/screenshare.css");
-    document.getElementsByTagName("head")[0].appendChild(fileref);
-    var fileref2=document.createElement("script");
-    fileref2.setAttribute("type", "text/javascript");
-    fileref2.setAttribute("src", "http://localhost:3000/lib/js/mutation_summary.js");
-    document.getElementsByTagName("head")[0].appendChild(fileref2);
-    var fileref3=document.createElement("script");
-    fileref3.setAttribute("type", "text/javascript");
-    fileref3.setAttribute("src", "http://localhost:3000/lib/js/tree_mirror.js");
-    document.getElementsByTagName("head")[0].appendChild(fileref3);
-    var fileref4=document.createElement("script");
-    fileref4.setAttribute("type", "text/javascript");
-    fileref4.setAttribute("src", "http://localhost:3001/socket.io/socket.io.js");
-    document.getElementsByTagName("head")[0].appendChild(fileref4);
+    var screenshareCSS = document.createElement("link");
+    screenshareCSS.setAttribute("rel", "stylesheet");
+    screenshareCSS.setAttribute("type", "text/css");
+    screenshareCSS.setAttribute("href", "http://yearofthecu.com:3000/lib/css/screenshare.css");
+    document.getElementsByTagName("head")[0].appendChild(screenshareCSS);
+    var MutationSummaryScript = document.createElement("script");
+    MutationSummaryScript.setAttribute("type", "text/javascript");
+    MutationSummaryScript.setAttribute("src", "http://yearofthecu.com:3000/lib/js/mutation_summary.js");
+    document.getElementsByTagName("head")[0].appendChild(MutationSummaryScript);
+    var TreeMirrorScript = document.createElement("script");
+    TreeMirrorScript.setAttribute("type", "text/javascript");
+    TreeMirrorScript.setAttribute("src", "http://yearofthecu.com:3000/lib/js/tree_mirror.js");
+    document.getElementsByTagName("head")[0].appendChild(TreeMirrorScript);
+    var SocketIOScript = document.createElement("script");
+    SocketIOScript.setAttribute("type", "text/javascript");
+    SocketIOScript.setAttribute("src", "http://yearofthecu.com:3001/socket.io/socket.io.js");
+    document.getElementsByTagName("head")[0].appendChild(SocketIOScript);
     AddMenu();
 
     window.addEventListener('load', function() {
@@ -93,7 +106,7 @@ function startMirroring() {
     }
 }
 function ContinueSession(){
-    socket = io.connect('http://localhost:3001');
+    socket = io.connect('http://yearofthecu.com:3001');
     socket.on('connect', function(){
         socket.emit('PageChange', sessvars.Session);
         $('#RemoteStatus').text('Status: Waiting for connection.');
@@ -117,7 +130,7 @@ function ContinueSession(){
     });
 }
 function CreateSession(){
-    socket = io.connect('http://localhost:3001');
+    socket = io.connect('http://yearofthecu.com:3001');
     SessionKey = document.getElementById('SessionKey').value;
     socket.on('connect', function(){
         socket.emit('CreateSession', SessionKey);
