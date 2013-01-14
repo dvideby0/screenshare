@@ -65,6 +65,16 @@ You must have NodeJS > 0.6.x installed, with socket.io and express modules. You 
 
 9. Full mobile support **(not started)**
 
+10. Fix issues with proper scrolling to top **(not started)**
+
+11. Add SSL support **(not started)**
+
+12. Harden socket access/Security **(not started)**
+
+13. Service clustering **(not started)**
+
+14. Logging **(not started)**
+
 
 
 ##Credits
