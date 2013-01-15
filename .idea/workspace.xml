@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55e27d9a-22ad-408f-add0-990bf9fc7042" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/js/cfinstall.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/js/screenshare.js" afterPath="$PROJECT_DIR$/public/lib/js/screenshare.js" />
     </list>
     <ignored path="remote-assist.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,10 +45,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="29" selection-start="2784" selection-end="2784" vertical-scroll-proportion="0.37238494">
+            <state line="75" column="29" selection-start="2784" selection-end="2784" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -69,12 +72,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="screenshare.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="screenshare.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/lib/js/screenshare.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="24" selection-start="1118" selection-end="1118" vertical-scroll-proportion="-14.423077">
+            <state line="27" column="76" selection-start="956" selection-end="956" vertical-scroll-proportion="0.39073807">
               <folding>
-                <marker date="1358104371000" expanded="true" signature="8525:8535" placeholder="..." />
+                <marker date="1358217487000" expanded="true" signature="7148:7158" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -111,7 +114,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/lib/css/admin.css" />
         <option value="$USER_HOME$/Library/Caches/TemporaryItems/1-preview.js" />
         <option value="$USER_HOME$/Library/Caches/TemporaryItems/1-client.js" />
         <option value="$USER_HOME$/Library/Caches/TemporaryItems/1-preview.html" />
@@ -119,14 +121,15 @@
         <option value="$PROJECT_DIR$/public/lib/css/client.css" />
         <option value="$PROJECT_DIR$/public/lib/css/screenshare.css" />
         <option value="$PROJECT_DIR$/public/lib/js/client.js" />
-        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/lib/js/session.js" />
         <option value="$PROJECT_DIR$/public/lib/js/admin.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/public/preview.html" />
         <option value="$PROJECT_DIR$/public/lib/js/preview.js" />
-        <option value="$PROJECT_DIR$/public/lib/js/screenshare.js" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/public/lib/js/cfinstall.js" />
+        <option value="$PROJECT_DIR$/public/lib/js/screenshare.js" />
       </list>
     </option>
   </component>
@@ -405,18 +408,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/preview.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="58" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/lib/css/client.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="1" selection-start="123" selection-end="123" vertical-scroll-proportion="0.19067797" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/lib/css/admin.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="17" selection-start="56" selection-end="56" vertical-scroll-proportion="0.08219178" />
@@ -454,15 +445,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/lib/js/screenshare.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="24" selection-start="1118" selection-end="1118" vertical-scroll-proportion="-14.423077">
-          <folding>
-            <marker date="1358104371000" expanded="true" signature="8525:8535" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/lib/js/admin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="1" selection-start="688" selection-end="688" vertical-scroll-proportion="0.0">
@@ -486,23 +468,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/lib/js/client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="39" selection-start="476" selection-end="476" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/preview.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="43" selection-start="273" selection-end="288" vertical-scroll-proportion="-3.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="128" column="0" selection-start="5339" selection-end="5407" vertical-scroll-proportion="0.8792846">
           <folding />
         </state>
       </provider>
@@ -516,8 +484,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="29" selection-start="2784" selection-end="2784" vertical-scroll-proportion="0.37238494">
+        <state line="75" column="29" selection-start="2784" selection-end="2784" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/TemporaryItems/1-server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="127" column="68" selection-start="5399" selection-end="5399" vertical-scroll-proportion="0.91058123">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/js/client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="39" selection-start="476" selection-end="476" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/js/cfinstall.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="81" selection-start="2894" selection-end="2894" vertical-scroll-proportion="0.086330935">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/js/screenshare.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="76" selection-start="956" selection-end="956" vertical-scroll-proportion="0.39073807">
+          <folding>
+            <marker date="1358217487000" expanded="true" signature="7148:7158" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
