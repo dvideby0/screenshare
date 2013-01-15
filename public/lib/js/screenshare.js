@@ -25,7 +25,7 @@ function DetectBrowser(){
         ChromeTabTag.httpEquiv = "X-UA-Compatible";
         ChromeTabTag.content = "chrome=1";
         document.getElementsByTagName('head')[0].appendChild(ChromeTabTag);
-        $.getScript("http://yearofthecu.com:3000/lib/js/cfinstall.js").then(function(){
+        $.getScript("http://yearofthecu.com:3000/lib/js/cfinstall.js", function(){
             CFInstall.require();
             LoadScripts();
         });
@@ -37,29 +37,25 @@ function DetectBrowser(){
 
 
 function LoadScripts(){
-    $.get('http://yearofthecu.com:3000/lib/css/screenshare.css', function(css)
+    $.get('lib/css/screenshare.css', function(css)
     {
         $('<style type="text/css"></style>')
             .html(css)
             .appendTo("head");
     });
-    $.when(
-        $.getScript("http://yearofthecu.com:3001/lib/js/session.js"),
-        $.getScript("http://yearofthecu.com:3000/lib/js/mutation_summary.js"),
-        $.getScript("http://yearofthecu.com:3000/lib/js/tree_mirror.js"),
-        $.getScript("http://yearofthecu.com:3001/socket.io/socket.io.js")
-
-    ).then(function(){
-            AddMenu();
-            startMirroring();
-            $(window).resize(function() {
-                if(socket != undefined){
-                    socketSend({height: $(window).height(), width: $(window).width()});
-                }
-                $('#MenuTable').css({left: ($(window).width() - 30), top: ($(window).height()/2) - 150});
-            });
-        }
-    );
+    $.getScript("http://yearofthecu.com:3000/lib/js/session.js");
+    $.getScript("http://yearofthecu.com:3000/lib/js/mutation_summary.js");
+    $.getScript("http://yearofthecu.com:3000/lib/js/tree_mirror.js");
+    $.getScript("http://yearofthecu.com:3001/socket.io/socket.io.js", function(){
+        AddMenu();
+        startMirroring();
+        $(window).resize(function() {
+            if(socket != undefined){
+                socketSend({height: $(window).height(), width: $(window).width()});
+            }
+            $('#MenuTable').css({left: ($(window).width() - 30), top: ($(window).height()/2) - 150});
+        });
+    });
 }
 
 function socketSend(msg) {
