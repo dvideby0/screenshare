@@ -52,9 +52,9 @@
       <file leaf-file-name="screenshare.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/lib/js/screenshare.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="3" selection-start="2222" selection-end="2222" vertical-scroll-proportion="0.92050207">
+            <state line="82" column="32" selection-start="3011" selection-end="3031" vertical-scroll-proportion="0.3487699">
               <folding>
-                <marker date="1358325424000" expanded="true" signature="8176:8186" placeholder="..." />
+                <marker date="1358326304000" expanded="true" signature="9496:9506" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -518,9 +518,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/lib/js/screenshare.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="3" selection-start="2222" selection-end="2222" vertical-scroll-proportion="0.92050207">
+        <state line="82" column="32" selection-start="3011" selection-end="3031" vertical-scroll-proportion="0.3487699">
           <folding>
-            <marker date="1358325424000" expanded="true" signature="8176:8186" placeholder="..." />
+            <marker date="1358326304000" expanded="true" signature="9496:9506" placeholder="..." />
           </folding>
         </state>
       </provider>

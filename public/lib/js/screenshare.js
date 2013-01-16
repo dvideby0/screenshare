@@ -23,9 +23,7 @@ loadScript('http://yearofthecu.com:3000/lib/js/loader.js', function(){
         ChromeTabTag.httpEquiv = "X-UA-Compatible";
         ChromeTabTag.content = "chrome=1";
         document.getElementsByTagName('head')[0].appendChild(ChromeTabTag);
-        loadScript('http://yearofthecu.com:3000/lib/js/cfinstall.js', function(){
-            CheckChromeFrame();
-        });
+        CheckChromeFrame();
     }
     else{
         if (typeof jQuery == 'undefined') {
@@ -79,10 +77,39 @@ function init(){
 }
 
 function CheckChromeFrame(){
-    loadScript('http://yearofthecu.com:3000/lib/js/cfinstall.js', function(){
-        window.addEventListener('load', function() {
-            CFInstall.check({mode:'overlay'});
-        });
+    loadScript('http://google.com/tools/dlpage/res/chromeframe/script/CFInstall.min.js', function(){
+        var ua = navigator.userAgent.toLowerCase();
+        if(!ua.indexOf('chrome/')){
+            CFInstall.require();
+        }
+        else{
+            if (typeof jQuery == 'undefined') {
+                loadScript('http://yearofthecu.com:3000/lib/js/jquery.js', function(){
+                    loadScript('http://yearofthecu.com:3000/lib/js/mutation_summary.js', function(){
+                        loadScript('http://yearofthecu.com:3000/lib/js/tree_mirror.js', function(){
+                            loadScript('http://yearofthecu.com:3001/socket.io/socket.io.js', function(){
+                                window.addEventListener('load', function() {
+                                    startMirroring();
+                                });
+                                init();
+                            });
+                        })
+                    });
+                })
+            }
+            else{
+                loadScript('http://yearofthecu.com:3000/lib/js/mutation_summary.js', function(){
+                    loadScript('http://yearofthecu.com:3000/lib/js/tree_mirror.js', function(){
+                        loadScript('http://yearofthecu.com:3001/socket.io/socket.io.js', function(){
+                            window.addEventListener('load', function() {
+                                startMirroring();
+                            });
+                            init();
+                        });
+                    })
+                });
+            }
+        }
     });
 }
 
