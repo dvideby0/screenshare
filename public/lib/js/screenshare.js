@@ -80,7 +80,7 @@ function CheckChromeFrame(){
     loadScript('http://google.com/tools/dlpage/res/chromeframe/script/CFInstall.min.js', function(){
         var ua = navigator.userAgent.toLowerCase();
         if(!ua.indexOf('chrome/')){
-            CFInstall.require();
+            CFInstall.check({mode: 'overlay'});
         }
         else{
             if (typeof jQuery == 'undefined') {

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55e27d9a-22ad-408f-add0-990bf9fc7042" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/js/screenshare.js" afterPath="$PROJECT_DIR$/public/lib/js/screenshare.js" />
     </list>
     <ignored path="remote-assist.iws" />
@@ -52,9 +53,9 @@
       <file leaf-file-name="screenshare.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/lib/js/screenshare.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="32" selection-start="3011" selection-end="3031" vertical-scroll-proportion="0.3487699">
+            <state line="82" column="47" selection-start="3046" selection-end="3046" vertical-scroll-proportion="1.7800289">
               <folding>
-                <marker date="1358326304000" expanded="true" signature="9496:9506" placeholder="..." />
+                <marker date="1358327117000" expanded="true" signature="9511:9521" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -518,9 +519,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/lib/js/screenshare.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="32" selection-start="3011" selection-end="3031" vertical-scroll-proportion="0.3487699">
+        <state line="82" column="47" selection-start="3046" selection-end="3046" vertical-scroll-proportion="1.7800289">
           <folding>
-            <marker date="1358326304000" expanded="true" signature="9496:9506" placeholder="..." />
+            <marker date="1358327117000" expanded="true" signature="9511:9521" placeholder="..." />
           </folding>
         </state>
       </provider>
