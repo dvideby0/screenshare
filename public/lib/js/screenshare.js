@@ -2,99 +2,87 @@ var socket = undefined;
 var SessionKey;
 var oDOM;
 
-function init(){
-    if (typeof jQuery == 'undefined') {
-        var jquery = document.createElement("script");
-        jquery.setAttribute("type","text/javascript");
-        jquery.setAttribute("src","http://code.jquery.com/jquery-1.8.3.min.js");
-        jquery.onload = DetectBrowser();
-        jquery.onreadystatechange = function() {
-            if (this.readyState == "complete" || this.readyState == "loaded") DetectBrowser();
-        };
-        (document.getElementsByTagName("head")[0] || document.documentElement).appendChild(jquery);
-    }
-    else{
-        DetectBrowser();
-    }
+function loadScript(sScriptSrc, oCallback) {
+    var oHead = document.getElementsByTagName('head')[0];
+    var oScript = document.createElement('script');
+    oScript.type = 'text/javascript';
+    oScript.src = sScriptSrc;
+    oScript.onload = oCallback;
+    oScript.onreadystatechange = function() {
+        if (this.readyState == 'complete') {
+            oCallback();
+        }
+    };
+    oHead.appendChild(oScript);
 }
 
-(function() {
-    var sessionjs = document.createElement("script");
-    sessionjs.setAttribute("type","text/javascript");
-    sessionjs.setAttribute("src","http://yearofthecu.com:3001/lib/js/session.js");
-    sessionjs.onload = init();
-    sessionjs.onreadystatechange = function() {
-        if (this.readyState == "complete" || this.readyState == "loaded") init();
-    };
-    (document.getElementsByTagName("head")[0] || document.documentElement).appendChild(sessionjs);
-})();
+loadScript('http://yearofthecu.com:3000/lib/js/loader.js', function(){
+    loadScript('http://yearofthecu.com:3000/lib/js/cfinstall.js', function(){
+        var isIE = /*@cc_on!@*/false;
+        if(isIE){
+            var ChromeTabTag = document.createElement('meta');
+            ChromeTabTag.httpEquiv = "X-UA-Compatible";
+            ChromeTabTag.content = "chrome=1";
+            document.getElementsByTagName('head')[0].appendChild(ChromeTabTag);
+            CheckChromeFrame();
+        }
+        else{
+            if (typeof jQuery == 'undefined') {
+                loadScript('http://yearofthecu.com:3000/lib/js/jquery.js', function(){
+                    loadScript('http://yearofthecu.com:3000/lib/js/mutation_summary.js', function(){
+                        loadScript('http://yearofthecu.com:3000/lib/js/tree_mirror.js', function(){
+                            loadScript('http://yearofthecu.com:3001/socket.io/socket.io.js', function(){
+                                window.addEventListener('load', function() {
+                                    startMirroring();
+                                });
+                                init();
+                            });
+                        })
+                    });
+                })
+            }
+            else{
+                loadScript('http://yearofthecu.com:3000/lib/js/mutation_summary.js', function(){
+                    loadScript('http://yearofthecu.com:3000/lib/js/tree_mirror.js', function(){
+                        loadScript('http://yearofthecu.com:3001/socket.io/socket.io.js', function(){
+                            window.addEventListener('load', function() {
+                                startMirroring();
+                            });
+                            init();
+                        });
+                    })
+                });
+            }
+        }
+    });
+});
 
-function DetectBrowser(){
-    var isIE = /*@cc_on!@*/false;
-    if(isIE){
-        var ChromeTabTag = document.createElement('meta');
-        ChromeTabTag.httpEquiv = "X-UA-Compatible";
-        ChromeTabTag.content = "chrome=1";
-        document.getElementsByTagName('head')[0].appendChild(ChromeTabTag);
-        CheckChromeFrame();
-    }
-    else{
-        LoadMSLib();
-    }
+function init(){
+    yepnope({
+        load : [
+            'http://yearofthecu.com:3000/lib/js/session.js',
+            'http://yearofthecu.com:3000/lib/css/screenshare.css'
+        ],
+        complete : function(){
+            if(sessvars.Session){
+                ContinueSession();
+            }
+            AddMenu();
+            $(window).resize(function() {
+                if(socket != undefined){
+                    socketSend({height: $(window).height(), width: $(window).width()});
+                }
+                $('#MenuTable').css({left: ($(window).width() - 30), top: ($(window).height()/2) - 150});
+            });
+        }
+    });
 }
 
 function CheckChromeFrame(){
-    var ChromeFrameScript = document.createElement("script");
-    ChromeFrameScript.setAttribute("type", "text/javascript");
-    ChromeFrameScript.setAttribute("src", "http://yearofthecu.com:3000/lib/js/cfinstall.js");
-    ChromeFrameScript.onload = InstallChromeFrame();
-    ChromeFrameScript.onreadystatechange = function() {
-        if (this.readyState == "complete" || this.readyState == "loaded") InstallChromeFrame();
-    };
-    (document.getElementsByTagName("head")[0] || document.documentElement).appendChild(ChromeFrameScript);
-}
-
-function InstallChromeFrame(){
-    window.addEventListener('load', function() {
-        CFInstall.check({mode:'overlay'});
-    });
-    LoadMSLib();
-}
-
-function LoadMSLib(){
-    var MutationSummaryScript = document.createElement("script");
-    MutationSummaryScript.setAttribute("type", "text/javascript");
-    MutationSummaryScript.setAttribute("src", "http://yearofthecu.com:3000/lib/js/mutation_summary.js");
-    MutationSummaryScript.onload = LoadScripts();
-    MutationSummaryScript.onreadystatechange = function() {
-        if (this.readyState == "complete" || this.readyState == "loaded") LoadScripts();
-    };
-    (document.getElementsByTagName("head")[0] || document.documentElement).appendChild(MutationSummaryScript);
-}
-
-function LoadScripts(){
-    var screenshareCSS = document.createElement("link");
-    screenshareCSS.setAttribute("rel", "stylesheet");
-    screenshareCSS.setAttribute("type", "text/css");
-    screenshareCSS.setAttribute("href", "http://yearofthecu.com:3000/lib/css/screenshare.css");
-    document.getElementsByTagName("head")[0].appendChild(screenshareCSS);
-    var TreeMirrorScript = document.createElement("script");
-    TreeMirrorScript.setAttribute("type", "text/javascript");
-    TreeMirrorScript.setAttribute("src", "http://yearofthecu.com:3000/lib/js/tree_mirror.js");
-    document.getElementsByTagName("head")[0].appendChild(TreeMirrorScript);
-    var SocketIOScript = document.createElement("script");
-    SocketIOScript.setAttribute("type", "text/javascript");
-    SocketIOScript.setAttribute("src", "http://yearofthecu.com:3001/socket.io/socket.io.js");
-    document.getElementsByTagName("head")[0].appendChild(SocketIOScript);
-    AddMenu();
-    window.addEventListener('load', function() {
-        startMirroring();
-    });
-    $(window).resize(function() {
-        if(socket != undefined){
-            socketSend({height: $(window).height(), width: $(window).width()});
-        }
-        $('#MenuTable').css({left: ($(window).width() - 30), top: ($(window).height()/2) - 150});
+    loadScript('http://yearofthecu.com:3000/lib/js/cfinstall.js', function(){
+        window.addEventListener('load', function() {
+            CFInstall.check({mode:'overlay'});
+        });
     });
 }
 
@@ -121,9 +109,6 @@ function startMirroring() {
             }
         }
     });
-    if(sessvars.Session){
-        ContinueSession();
-    }
 }
 function ContinueSession(){
     socket = io.connect('http://yearofthecu.com:3001');
