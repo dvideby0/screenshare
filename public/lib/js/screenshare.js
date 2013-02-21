@@ -48,7 +48,10 @@ function LoadAllScripts(){
 function CheckChromeFrame(){
     loadScript('http://google.com/tools/dlpage/res/chromeframe/script/CFInstall.min.js', function(){
         var ua = navigator.userAgent.toLowerCase();
-        ua.indexOf('chrome/') >= 0 ? CFInstall.require() : LoadAllScripts();
+        var PlaceHolderTag = document.createElement('div');
+        PlaceHolderTag.id = 'cf-placeholder';
+        document.getElementsByTagName('body')[0].appendChild(PlaceHolderTag);
+        ua.indexOf('chrome/') >= 0 ? CFInstall.check({node: "cf-placeholder"}) : LoadAllScripts();
     });
 }
 
