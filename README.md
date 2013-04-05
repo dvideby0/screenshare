@@ -61,9 +61,9 @@ You must have NodeJS > 0.6.x installed, with socket.io and express modules. You 
 
 7. Support multi page sites **(working but still a little buggy)**
 
-8. IE support **(starting to test Chrome Frame as a workaround)**
+8. IE support **(starting to test Chrome Frame as a workaround, may end up having to fallback to mutation events)**
 
-9. Full mobile support **(not started)**
+9. Full mobile support **(not started, currently works for Chrome and Firefox on Android)**
 
 10. Fix issues with proper scrolling to top **(not started)**
 
@@ -74,6 +74,28 @@ You must have NodeJS > 0.6.x installed, with socket.io and express modules. You 
 13. Service clustering **(not started)**
 
 14. Logging **(not started)**
+
+15. Handle local images **(not started)**
+
+16. Relative to absolute paths **(not started)**
+
+17. Script optimization with minification, consolidation and compression **(not started)**
+
+
+
+##Future Plans:
+
+1. Integrate streaming audio
+
+2. Chat integration
+
+3. Video integration **(WebRTC)**
+
+4. Queue system for routing to appropriate personel
+
+5. Ability to view/manipulate iframe content
+
+6. Record and playback functionality
 
 
 
