@@ -31,7 +31,7 @@ You must have NodeJS > 0.6.x installed, with socket.io and express modules. You 
 
 ######How To use
 
-1. Make sure that your file structure follows lib/js & lib/css, and then change the CDN and SocketCDN variables to your server environment.
+1. Make sure that your file structure follows `lib/js` & `lib/css`, then change the CDN and SocketCDN variables to your server environment.
 
 2. Add the screenshare.js script `public/lib/js/screenshare.js` before the closing body tag `</body>` on your html file(s)
 
