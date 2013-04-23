@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55e27d9a-22ad-408f-add0-990bf9fc7042" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/js/screenshare.js" afterPath="$PROJECT_DIR$/public/lib/js/screenshare.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="remote-assist.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,13 +49,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="screenshare.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="screenshare.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/lib/js/screenshare.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="563" selection-end="563" vertical-scroll-proportion="0.4341534">
+            <state line="20" column="0" selection-start="563" selection-end="563" vertical-scroll-proportion="26.538462">
               <folding>
                 <marker date="1366753775000" expanded="true" signature="9058:9068" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="63" selection-start="1285" selection-end="1285" vertical-scroll-proportion="0.52517986">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -120,11 +129,11 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/public/preview.html" />
         <option value="$PROJECT_DIR$/public/lib/js/preview.js" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/public/lib/js/cfinstall.js" />
         <option value="$PROJECT_DIR$/public/lib/js/loader.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/lib/js/screenshare.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -480,13 +489,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="29" selection-start="2885" selection-end="2885" vertical-scroll-proportion="1.618705">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="192" selection-end="192" vertical-scroll-proportion="-0.625">
@@ -496,10 +498,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/lib/js/screenshare.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="563" selection-end="563" vertical-scroll-proportion="0.4341534">
+        <state line="20" column="0" selection-start="563" selection-end="563" vertical-scroll-proportion="26.538462">
           <folding>
             <marker date="1366753775000" expanded="true" signature="9058:9068" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="63" selection-start="1285" selection-end="1285" vertical-scroll-proportion="0.52517986">
+          <folding />
         </state>
       </provider>
     </entry>

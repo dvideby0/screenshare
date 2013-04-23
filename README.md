@@ -31,17 +31,19 @@ You must have NodeJS > 0.6.x installed, with socket.io and express modules. You 
 
 ######How To use
 
-1. Add the screenshare.js script `public/lib/js/screenshare.js` before the closing body tag `</body>` on your html file(s)
+1. Make sure that your file structure follows lib/js & lib/css, and then change the CDN and SocketCDN variables to your server environment.
 
-2. Run the app.js `node app.js`
+2. Add the screenshare.js script `public/lib/js/screenshare.js` before the closing body tag `</body>` on your html file(s)
 
-3. Open your website (there should now be a help tab on the right of your page)
+3. Run the app.js `node app.js`
 
-4. Enter in a key, then click the Create Key button.
+4. Open your website (there should now be a help tab on the right of your page)
 
-5. Open up another browser page to `http://localhost:3000/admin.html`
+5. Enter in a key, then click the Create Key button.
 
-6. On the admin page type the key you created on your site and hit enter
+6. Open up another browser page to `http://localhost:3000/admin.html`
+
+7. On the admin page type the key you created on your site and hit enter
 
     > Now you should be able to see exactly what is happening on the client screen. There are still plenty of bugs with this application but it is in a usable state for anyone to begin playing with.
 
