@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="55e27d9a-22ad-408f-add0-990bf9fc7042" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/js/screenshare.js" afterPath="$PROJECT_DIR$/public/lib/js/screenshare.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
     </list>
     <ignored path="remote-assist.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,21 +50,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="screenshare.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="screenshare.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/lib/js/screenshare.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="78" selection-start="2092" selection-end="2092" vertical-scroll-proportion="0.29288703">
+            <state line="66" column="9" selection-start="2516" selection-end="2516" vertical-scroll-proportion="0.0">
               <folding>
-                <marker date="1361463112000" expanded="true" signature="8276:8286" placeholder="..." />
+                <marker date="1361464077000" expanded="true" signature="8276:8286" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0">
+            <state line="6" column="0" selection-start="192" selection-end="192" vertical-scroll-proportion="0.021645023">
               <folding />
             </state>
           </provider>
@@ -124,8 +124,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/public/lib/js/cfinstall.js" />
         <option value="$PROJECT_DIR$/public/lib/js/loader.js" />
-        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/lib/js/screenshare.js" />
+        <option value="$PROJECT_DIR$/public/index.html" />
       </list>
     </option>
   </component>
@@ -328,13 +328,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1436" height="878" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20791367" sideWeight="0.67107004" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21366906" sideWeight="0.67107004" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989432" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -411,38 +411,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/lib/css/screenshare.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="1" selection-start="1507" selection-end="1507" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="66" column="1" selection-start="1507" selection-end="1507" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/lib/js/session.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="842" selection-end="842" vertical-scroll-proportion="0.31380752">
-          <folding>
-            <marker date="1357928333000" expanded="true" signature="2622:2702" placeholder="..." />
-            <marker date="1357928333000" expanded="true" signature="2828:2867" placeholder="..." />
-            <marker date="1357928333000" expanded="true" signature="3037:3051" placeholder="..." />
-          </folding>
-        </state>
+        <state line="15" column="0" selection-start="842" selection-end="842" vertical-scroll-proportion="0.31380752" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/lib/js/tree_mirror.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/lib/js/admin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="1" selection-start="688" selection-end="688" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1357975582000" expanded="true" signature="460:585" placeholder="..." />
-          </folding>
-        </state>
+        <state line="18" column="1" selection-start="688" selection-end="688" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/lib/js/preview.js">
@@ -468,9 +452,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="29" selection-start="2784" selection-end="2784" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="75" column="29" selection-start="2784" selection-end="2784" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/lib/js/client.js">
@@ -482,9 +464,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/lib/js/cfinstall.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="81" selection-start="2894" selection-end="2894" vertical-scroll-proportion="0.086330935">
-          <folding />
-        </state>
+        <state line="4" column="81" selection-start="2894" selection-end="2894" vertical-scroll-proportion="0.086330935" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/admin.html">
@@ -501,13 +481,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/lib/js/mutation_summary.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -515,10 +488,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/lib/js/screenshare.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="78" selection-start="2092" selection-end="2092" vertical-scroll-proportion="0.29288703">
+        <state line="66" column="9" selection-start="2516" selection-end="2516" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1361463112000" expanded="true" signature="8276:8286" placeholder="..." />
+            <marker date="1361464077000" expanded="true" signature="8276:8286" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="192" selection-end="192" vertical-scroll-proportion="0.021645023">
+          <folding />
         </state>
       </provider>
     </entry>
