@@ -213,6 +213,43 @@ function SendMouse(){
     }
 }
 
+/*  ------------------------- Code for converting relative images to Data URLs -----------------------------------
+
+
+function getImageDataURL(url, success, error) {
+    var data, canvas, ctx;
+    var img = new Image();
+    img.onload = function(){
+        // Create the canvas element.
+        canvas = document.createElement('canvas');
+        canvas.width = img.width;
+        canvas.height = img.height;
+        // Get '2d' context and draw the image.
+        ctx = canvas.getContext("2d");
+        ctx.drawImage(img, 0, 0);
+        // Get canvas data URL
+        try{
+            data = canvas.toDataURL();
+            success({image:img, data:data});
+        }catch(e){
+            error(e);
+        }
+    };
+    // Load image URL.
+    try{
+        img.src = url;
+    }catch(e){
+        error(e);
+    }
+}
+
+getImageDataURL('image.png', function(succuss, error){
+    $('#Response').append('<img src=\"' + succuss.data + '\">');
+})
+
+*/
+
+
 function AddMenu(){
     $('body').append('<table id="MenuTable" cellpadding="0">' +
         '<tr>' +
