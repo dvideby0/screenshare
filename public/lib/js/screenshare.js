@@ -1,6 +1,9 @@
 var socket = undefined;
 var SessionKey;
 var oDOM;
+var CDN = 'http://yearofthecu.com:3000/';
+var SocketCDN = 'http://yearofthecu.com:3001/'
+
 
 function loadScript(sScriptSrc, oCallback) {
     var oHead = document.getElementsByTagName('head')[0];
@@ -18,10 +21,10 @@ function loadScript(sScriptSrc, oCallback) {
 
 function LoadAllScripts(){
     if (typeof jQuery == 'undefined') {
-        loadScript('http://yearofthecu.com:3000/lib/js/jquery.js', function(){
-            loadScript('http://yearofthecu.com:3000/lib/js/mutation_summary.js', function(){
-                loadScript('http://yearofthecu.com:3000/lib/js/tree_mirror.js', function(){
-                    loadScript('http://yearofthecu.com:3001/socket.io/socket.io.js', function(){
+        loadScript(CDN + 'lib/js/jquery.js', function(){
+            loadScript(CDN + 'lib/js/mutation_summary.js', function(){
+                loadScript(CDN + 'lib/js/tree_mirror.js', function(){
+                    loadScript(SocketCDN + 'socket.io/socket.io.js', function(){
                         window.addEventListener('load', function() {
                             startMirroring();
                         });
@@ -32,9 +35,9 @@ function LoadAllScripts(){
         })
     }
     else{
-        loadScript('http://yearofthecu.com:3000/lib/js/mutation_summary.js', function(){
-            loadScript('http://yearofthecu.com:3000/lib/js/tree_mirror.js', function(){
-                loadScript('http://yearofthecu.com:3001/socket.io/socket.io.js', function(){
+        loadScript(CDN + 'lib/js/mutation_summary.js', function(){
+            loadScript(CDN + 'lib/js/tree_mirror.js', function(){
+                loadScript(SocketCDN + 'socket.io/socket.io.js', function(){
                     window.addEventListener('load', function() {
                         startMirroring();
                     });
@@ -55,7 +58,7 @@ function CheckChromeFrame(){
     });
 }
 
-loadScript('http://yearofthecu.com:3000/lib/js/loader.js', function(){
+loadScript(CDN + 'lib/js/loader.js', function(){
     var isIE = /*@cc_on!@*/false;
     if(isIE){
         var ChromeTabTag = document.createElement('meta');
@@ -72,8 +75,8 @@ loadScript('http://yearofthecu.com:3000/lib/js/loader.js', function(){
 function init(){
     yepnope({
         load : [
-            'http://yearofthecu.com:3000/lib/js/session.js',
-            'http://yearofthecu.com:3000/lib/css/screenshare.css'
+            CDN + 'lib/js/session.js',
+            CDN + 'lib/css/screenshare.css'
         ],
         complete : function(){
             if(sessvars.Session){
@@ -115,7 +118,7 @@ function startMirroring() {
     });
 }
 function ContinueSession(){
-    socket = io.connect('http://yearofthecu.com:3001');
+    socket = io.connect(SocketCDN);
     socket.on('connect', function(){
         socket.emit('PageChange', sessvars.Session);
         $('#RemoteStatus').text('Status: Waiting for connection.');
@@ -139,7 +142,7 @@ function ContinueSession(){
     });
 }
 function CreateSession(){
-    socket = io.connect('http://yearofthecu.com:3001');
+    socket = io.connect(SocketCDN);
     SessionKey = document.getElementById('SessionKey').value;
     socket.on('connect', function(){
         socket.emit('CreateSession', SessionKey);
