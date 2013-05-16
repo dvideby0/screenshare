@@ -12,7 +12,7 @@ function loadScript(sScriptSrc, oCallback) {
     oScript.src = sScriptSrc;
     oScript.onload = oCallback;
     oScript.onreadystatechange = function() {
-        if (this.readyState == 'complete') {
+        if (this.readyState == 'loaded' ||this.readyState == 'complete') {
             oCallback();
         }
     };
@@ -50,21 +50,16 @@ function LoadAllScripts(){
 
 function CheckChromeFrame(){
     loadScript('http://google.com/tools/dlpage/res/chromeframe/script/CFInstall.min.js', function(){
-        var ua = navigator.userAgent.toLowerCase();
-        var PlaceHolderTag = document.createElement('div');
-        PlaceHolderTag.id = 'cf-placeholder';
-        document.getElementsByTagName('body')[0].appendChild(PlaceHolderTag);
-        ua.indexOf('chrome/') >= 0 ? CFInstall.check({node: "cf-placeholder"}) : LoadAllScripts();
+        CFInstall.check({
+            mode: "inline", // the default
+            node: "prompt"
+        });
+        LoadAllScripts();
     });
 }
-
 loadScript(CDN + 'lib/js/loader.js', function(){
     var isIE = /*@cc_on!@*/false;
     if(isIE){
-        var ChromeTabTag = document.createElement('meta');
-        ChromeTabTag.httpEquiv = "X-UA-Compatible";
-        ChromeTabTag.content = "chrome=1";
-        document.getElementsByTagName('head')[0].appendChild(ChromeTabTag);
         CheckChromeFrame();
     }
     else{
@@ -219,38 +214,38 @@ function SendMouse(){
 /*  ------------------------- Code for converting relative images to Data URLs -----------------------------------
 
 
-function getImageDataURL(url, success, error) {
-    var data, canvas, ctx;
-    var img = new Image();
-    img.onload = function(){
-        // Create the canvas element.
-        canvas = document.createElement('canvas');
-        canvas.width = img.width;
-        canvas.height = img.height;
-        // Get '2d' context and draw the image.
-        ctx = canvas.getContext("2d");
-        ctx.drawImage(img, 0, 0);
-        // Get canvas data URL
-        try{
-            data = canvas.toDataURL();
-            success({image:img, data:data});
-        }catch(e){
-            error(e);
-        }
-    };
-    // Load image URL.
-    try{
-        img.src = url;
-    }catch(e){
-        error(e);
-    }
-}
+ function getImageDataURL(url, success, error) {
+ var data, canvas, ctx;
+ var img = new Image();
+ img.onload = function(){
+ // Create the canvas element.
+ canvas = document.createElement('canvas');
+ canvas.width = img.width;
+ canvas.height = img.height;
+ // Get '2d' context and draw the image.
+ ctx = canvas.getContext("2d");
+ ctx.drawImage(img, 0, 0);
+ // Get canvas data URL
+ try{
+ data = canvas.toDataURL();
+ success({image:img, data:data});
+ }catch(e){
+ error(e);
+ }
+ };
+ // Load image URL.
+ try{
+ img.src = url;
+ }catch(e){
+ error(e);
+ }
+ }
 
-getImageDataURL('image.png', function(succuss, error){
-    $('#Response').append('<img src=\"' + succuss.data + '\">');
-})
+ getImageDataURL('image.png', function(succuss, error){
+ $('#Response').append('<img src=\"' + succuss.data + '\">');
+ })
 
-*/
+ */
 
 
 function AddMenu(){

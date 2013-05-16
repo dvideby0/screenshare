@@ -5,7 +5,14 @@ var server = http.createServer(app).listen(3001);
 var io = require('socket.io').listen(server);
 io.set('log level', 1);
 io.set('transports', ['websocket']);
-app.use(express.static(__dirname + '/public'));
+
+app.configure(function(){
+    app.use(function(req, res, next) {
+        res.setHeader("X-UA-Compatible", "chrome=1");
+        return next();
+    });
+    app.use(express.static(__dirname + '/public'));
+});
 io.sockets.on('connection', function(socket) {
     socket.on('CreateSession', function(msg){
         socket.join(msg);
