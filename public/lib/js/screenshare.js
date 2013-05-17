@@ -51,21 +51,24 @@ function LoadAllScripts(){
 function CheckChromeFrame(){
     loadScript('http://google.com/tools/dlpage/res/chromeframe/script/CFInstall.min.js', function(){
         CFInstall.check({
-            mode: "inline", // the default
-            node: "prompt"
+            mode: "popup"
         });
-        LoadAllScripts();
     });
 }
-loadScript(CDN + 'lib/js/loader.js', function(){
+
+function BrowserCheck(){
     var isIE = /*@cc_on!@*/false;
     if(isIE){
         CheckChromeFrame();
     }
     else{
-        LoadAllScripts();
+        loadScript(CDN + 'lib/js/loader.js', function(){
+            LoadAllScripts();
+        });
     }
-});
+}
+
+BrowserCheck();
 
 function init(){
     yepnope({
