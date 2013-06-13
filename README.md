@@ -63,7 +63,7 @@ You must have NodeJS > 0.6.x installed, with socket.io and express modules. You 
 
 7. Support multi page sites **(working but still a little buggy)**
 
-8. IE support **(starting to test Chrome Frame as a workaround, may end up having to fallback to mutation events)**
+8. IE support **(started, chrome frame flow working for IE, Tested WebRTC working as well)**
 
 9. Full mobile support **(not started, currently works for Chrome and Firefox on Android)**
 
