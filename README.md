@@ -77,9 +77,9 @@ You must have NodeJS > 0.6.x installed, with socket.io and express modules. You 
 
 14. Logging **(not started)**
 
-15. Handle local images **(not started)**
+15. Handle local images **(started, added commented out code to handle relative images)**
 
-16. Relative to absolute paths **(not started)**
+16. Relative to absolute paths **(see above, still need to work on unaccessable css and scripts)**
 
 17. Script optimization with minification, consolidation and compression **(not started)**
 
