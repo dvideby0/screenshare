@@ -5,6 +5,18 @@ var CDN = 'http://yearofthecu.com:3000/';
 var SocketCDN = 'http://yearofthecu.com:3001/'
 
 
+/* This block of code is to load inaccessible scripts that may be relative on mobile devices or behind a VPN or restricted network
+ function getScriptURL(){
+ var scriptsArray = document.getElementsByTagName('script');
+ for(var i=0;i<scriptsArray.length -1; i++){
+ $.get( scriptsArray[i].src, function( data ) {
+ console.log(data);
+ });
+ }
+ }
+
+ */
+
 function loadScript(sScriptSrc, oCallback) {
     var oHead = document.getElementsByTagName('head')[0];
     var oScript = document.createElement('script');
@@ -166,6 +178,7 @@ function CreateSession(){
     });
 }
 
+
 function BindEverything(){
     $(':input').each(function(){
         $(this).attr('value', this.value);
@@ -194,6 +207,7 @@ function BindEverything(){
         });
     });
 }
+
 
 function SendMouse(){
     document.onmousemove = function(e) {
